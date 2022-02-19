@@ -1,0 +1,336 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/iconsDashboard.css">
+    <link rel="stylesheet" href="~/css/styleDashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="~/js/mainDashboard.js"></script>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div class="dashboard">
+        <section class="navigation">
+            <div>
+                <a href=""><span class="material-icons-outlined">dashboard</span></a>
+                <span class="material-icons-outlined"> build </span>
+                <span class="material-icons-outlined">trending_up</span>
+                <span class="material-icons-outlined">insert_invitation</span>
+                <span class="material-icons-outlined"> settings_suggest </span>
+                <span class="material-icons-outlined">logout</span>
+            </div>
+            <img src="https://www.icmetl.org/wp-content/uploads/2020/11/user-icon-human-person-sign-vector-10206693.png" alt="user image" class="user">
+
+        </section>
+
+        <section class="main">
+
+            <div class="search">
+                <form action="">
+                    <input type="text" name="search" id="search" placeholder="Search Here">
+                    <span class="material-icons-outlined">search</span>
+
+                </form>
+
+                <div class="notifications">
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">edit</span>
+                </div>
+            </div>
+            <div class="title">
+                <h1>My INFORMATION</h1>
+                <form action="">
+                    <select name="" id="">
+                        <option value="soilTemperature">soil temperature</option>
+                        <option value="soilMoisture">soil moisture</option>
+                        <option value="atmosphericPressure">Atmospheric pressure</option>
+                        <option value="illumination">Intensity of illumination</option>
+                        <option value="tempture">temperature</option>
+                        <option value="moisture">moisture</option>
+
+                    </select>
+                </form>
+            </div>
+            <section class="weather">
+            </section>
+            <div class="info_list">
+                <div class="info">
+                    <div class="category"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">thermostat</span>
+                        <h2>soil temperature</h2>
+                    </div>
+                    <div class="colume">
+                        <p>10C</p>
+                        <meter max="100" min="-100" low="25" high="30" optimum="20" value="27"></meter>
+                    </div>
+
+
+                </div>
+                <div class="info">
+                    <div class="category category_color1"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">water_drop</span>
+                        <h2>soil moisture</h2>
+                    </div>
+
+                    <div class="gauge">
+
+                        <div class="gauge__body">
+                            <div class="gauge__fill category_color1"></div>
+                            <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="category category_color2"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">speed</span>
+                        <h2>Atmospheric pressure</h2>
+                    </div>
+
+                    <div class="gauge">
+
+                        <div class="gauge__body">
+                            <div class="gauge__fill category_color2"></div>
+                            <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="category category_color3"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">light</span>
+                        <h2>Intensity of illumination</h2>
+                    </div>
+
+                    <div class="gauge">
+
+                        <div class="gauge__body">
+                            <div class="gauge__fill category_color3"></div>
+                            <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="category category_color4"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">thermostat</span>
+                        <h2>temperature</h2>
+                    </div>
+                    <div class="colume">
+                        <p>10C</p>
+                        <meter max="100" min="0" low="25" high="30" optimum="20" value="27"></meter>
+                    </div>
+
+
+
+
+                </div>
+                <div class="info">
+                    <div class="category category_color5"></div>
+                    <div class="flex">
+                        <span class="material-icons-outlined">water_drop</span>
+                        <h2>moisture</h2>
+                    </div>
+
+                    <div class="gauge">
+
+                        <div class="gauge__body">
+                            <div class="gauge__fill category_color5"></div>
+                            <div class="gauge__cover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" control">
+            <button type="button" id="action" class="btn btn-outline-primary">Auto</button>
+            <button type="button" id="action1" class="btn btn-outline-secondary">Manual</button>
+            <label class="switch">
+                <input id="waterSwich" type="checkbox" disabled>
+                <span class="slider round"></span>
+            </label>
+        </section>
+
+    </div>
+    <script type="module">
+
+        const gaugeElement = document.querySelector(".gauge");
+        const gaugeElement1 = document.querySelectorAll(".gauge")[1];
+
+        const gaugeElement2 = document.querySelectorAll(".gauge")[2];
+        const gaugeElement3 = document.querySelectorAll(".gauge")[3];
+
+        function setGaugeValue(gauge, value) {
+            if (value < 0 || value > 1) {
+                return;
+            }
+
+            gauge.querySelector(".gauge__fill").style.transform = `rotate(${value / 2
+                }turn)`;
+            gauge.querySelector(".gauge__cover").textContent = `${Math.round(
+                value * 100
+            )}%`;
+        }
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-yIUJ4vRjf6UUeQW_4j0zIqPphI2Bh_Y",
+            authDomain: "iotfarmsystem.firebaseapp.com",
+            databaseURL: "https://iotfarmsystem-default-rtdb.firebaseio.com",
+            projectId: "iotfarmsystem",
+            storageBucket: "iotfarmsystem.appspot.com",
+            messagingSenderId: "576170551394",
+            appId: "1:576170551394:web:081f20675f679ccf5bc93b",
+            measurementId: "G-95J4P66NFL"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        var ischecked =document.getElementById('waterSwich').checked;
+
+        import { getDatabase, ref, get, child, update, remove }
+            from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+        const db = getDatabase();
+
+        function readData() {
+            const dbref = ref(db);
+            get(child(dbref, "UserId2")).then((snapshot) => {
+                if (snapshot.exists()) {
+                    setGaugeValue(gaugeElement, '0.0' + snapshot.val().PHSensor);
+                    setGaugeValue(gaugeElement1, 0.09);
+                    setGaugeValue(gaugeElement2, 0.5);
+                    setGaugeValue(gaugeElement3, 0.1);
+                    console.log(snapshot.val().PHSensor);
+                    console.log(snapshot.val().hSensor);
+                    console.log('isauto'+snapshot.val().isAuto);
+                    console.log(snapshot.val().tempSensor);
+                    console.log(snapshot.val().waterSwitch);
+                    console.log(document.getElementById('waterSwich').disabled)
+                    if (snapshot.val().isAuto == 0) {
+                        document.getElementById('waterSwich').disabled = false;
+                    } else {
+                        document.getElementById('waterSwich').disabled = true;
+
+                    }
+                } else {
+                    alert('data not found');
+                }
+
+            });
+        }
+        function updateData() {
+            update(ref(db, "UserId2"), {
+                
+                isAuto: 1
+                
+            }).then(() => {
+
+                alert("auto control mode is work");
+                document.getElementById('waterSwich').disabled = true;
+
+
+            }).catch((error) => {
+                alert(error);
+            });
+        } function updateData1() {
+            update(ref(db, "UserId2"), {
+                isAuto: 0
+
+            }).then(() => {
+
+                alert("Manual control mode is work");
+                document.getElementById('waterSwich').disabled = false;
+
+            }).catch((error) => {
+                alert(error);
+            });
+        }
+            function OpenwaterSwitch()  {
+                update(ref(db, "UserId2"), {
+                    waterSwitch: 1
+                }).then(() => {
+
+                    alert("water Switch open");
+
+                }).catch((error) => {
+                    alert(error);
+                });
+            }
+         
+        
+        function ClosedwaterSwitch() {
+            update(ref(db, "UserId2"), {
+                waterSwitch: 0
+            }).then(() => {
+                alert("water Switch closed");
+            }).catch((error) => {
+                alert(error);
+            });
+        }
+        function waterSwitchValue() {
+            const dbref = ref(db);
+            get(child(dbref, "UserId2")).then((snapshot) => {
+                if (snapshot.exists()) {
+                    if (snapshot.val().isAuto == 1) {
+                        if (snapshot.val().waterSwitch == 1) {
+                            document.getElementById('waterSwich').checked = true;
+                        } else if (snapshot.val().waterSwitch == 0) {
+                            document.getElementById('waterSwich').checked = false;
+                        }
+                    }
+                 
+                } else {
+                    alert('data not found');
+                }
+
+            });
+
+        }
+        setInterval(readData, 60000);
+        setInterval(waterSwitchValue, 1000);
+        document.getElementById('waterSwich').addEventListener('change', function () {
+            if (document.getElementById('waterSwich').disabled == false) {
+                
+                if (this.checked) {
+                    OpenwaterSwitch();
+                } else  {
+                    ClosedwaterSwitch();
+                }
+            }
+        })
+      
+           
+
+        window.addEventListener('load', readData);
+        document.getElementById("action").addEventListener('click', updateData);
+        document.getElementById("action1").addEventListener('click', updateData1);
+        
+
+    </script>
+</body>
+</html>
