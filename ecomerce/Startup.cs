@@ -27,6 +27,8 @@ namespace ecomerce
             services.AddMvc();
             services.AddControllersWithViews();
             services.AddDbContext<dbSmartAgricultureContext>();
+            services.AddRazorPages();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +49,7 @@ namespace ecomerce
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -54,7 +57,10 @@ namespace ecomerce
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
+
+            
         }
     }
 }

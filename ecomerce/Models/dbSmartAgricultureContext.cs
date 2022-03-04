@@ -1,4 +1,5 @@
 ﻿using System;
+using ecomerce.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -8,11 +9,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ecomerce.Models
 {
-    public partial class dbSmartAgricultureContext : DbContext
+    public partial class dbSmartAgricultureContext : ecomerceContext
     {
-        public dbSmartAgricultureContext()
-        {
-        }
+        
 
         public dbSmartAgricultureContext(DbContextOptions<dbSmartAgricultureContext> options)
             : base(options)
@@ -35,7 +34,7 @@ namespace ecomerce.Models
             if (!optionsBuilder.IsConfigured)
             {
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=.\\;Database=dbSmartAgriculture;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-B0KDJC5\\SQLEXPRESS;Database=dbSmartAgriculture;Trusted_Connection=True;");
             }
         }
 
