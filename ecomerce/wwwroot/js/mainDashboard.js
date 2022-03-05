@@ -1,5 +1,5 @@
-window.addEventListener("load",function(){
-     //getCoordintes();
+window.addEventListener("load", function () {
+    getCoordintes();
 
 
 
@@ -11,7 +11,7 @@ function getCoordintes() {
         timeout: 5000,
         maximumAge: 0
     };
-  
+
     function success(pos) {
         var crd = pos.coords;
         var lat = crd.latitude.toString();
@@ -20,37 +20,37 @@ function getCoordintes() {
         console.log(`Latitude: ${lat}, Longitude: ${lng}`);
         getCity(coordinates);
         return;
-  
+
     }
-  
+
     function error(err) {
         console.warn(`ERROR(${err.code}): ${err.message}`);
     }
-  
+
     navigator.geolocation.getCurrentPosition(success, error, options);
 }
-  
+
 // Step 2: Get city name
 function getCity(coordinates) {
-    
+
     var lat = coordinates[0];
-    var lng = coordinates[1]; 
+    var lng = coordinates[1];
     fetch(`http://api.positionstack.com/v1/reverse?access_key=10fb594a161b7d49b1a373d4ded8ea4c&query=${lat},${lng}`)
-    .then(response => response.json())
-    .then(data =>getLocation(data.data[0].region));
-    
+        .then(response => response.json())
+        .then(data => getLocation(data.data[0].region));
+
 }
 
 
 
 
-function getLocation(city){
+function getLocation(city) {
     fetch(`https://api.weatherapi.com/v1/current.json?key=ac1763cd50fd42cd9fe131850210912&q=${city}`)
-       .then(response => response.json())
-       .then(data =>updated(data));
-       }
-       function updated(data) {
-        document.querySelector(".weather").innerHTML=`
+        .then(response => response.json())
+        .then(data => updated(data));
+}
+function updated(data) {
+    document.querySelector(".weather").innerHTML = `
         
         <div style=" display: flex;"> 
         <img src="${data.current.condition.icon}" alt="">
@@ -60,11 +60,11 @@ function getLocation(city){
         </div>
         </div>
         <div class="temp">
-        <p>humidity: ${data.current.humidity}%</p> 
-        <p>last updated: ${data.current.last_updated}</p>
-        <p>pressure: ${data.current.pressure_mb}mb</p>
-        <p>wind: ${data.current.wind_degree}${data.current.wind_dir}</p>
+        <p>% ${data.current.humidity}:رطوبة</p> 
+        <p> ${data.current.last_updated}: اخر تحديث</p>
+        <p>${data.current.pressure_mb}mb :الضغط</p>
+        <p> ${data.current.wind_degree}${data.current.wind_dir}:الرياح</p>
         </div>
         `;
-        console.log(true);
-        }
+    console.log(true);
+}
