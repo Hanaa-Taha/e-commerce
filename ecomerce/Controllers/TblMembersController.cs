@@ -9,7 +9,7 @@ using ecomerce.Models;
 
 namespace ecomerce.Controllers
 {
-    public class TblMembersController : Controller
+   /* public class TblMembersController : Controller
     {
         private readonly dbSmartAgricultureContext _context;
 
@@ -148,5 +148,5 @@ namespace ecomerce.Controllers
         {
             return _context.TblMembers.Any(e => e.MemberId == id);
         }
-    }
+    }*/
 }

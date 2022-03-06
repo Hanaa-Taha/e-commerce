@@ -3,8 +3,9 @@
     "",
     "\\ecomerce",
     "\\ecomerce\\wwwroot",
-    "\\ecomerce\\wwwroot\\css"
+    "\\ecomerce\\wwwroot\\css",
+    "\\ecomerce\\wwwroot\\js"
   ],
-  "SelectedNode": "\\ecomerce\\wwwroot\\css\\styleDashboard.css",
+  "SelectedNode": "\\ecomerce\\wwwroot\\js\\mainHome.js",
   "PreviewInSolutionExplorer": false
 }
