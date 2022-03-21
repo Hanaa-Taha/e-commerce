@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ecomerce",
     "\\ecomerce\\wwwroot",
     "\\ecomerce\\wwwroot\\css",
     "\\ecomerce\\wwwroot\\js"
   ],
-  "SelectedNode": "\\ecomerce\\wwwroot\\js\\mainHome.js",
+  "SelectedNode": "\\ecomerce.sln",
   "PreviewInSolutionExplorer": false
 }

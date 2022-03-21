@@ -21,13 +21,13 @@ using ecomerce;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\user\source\repos\e-commerce2\ecomerce\Views\_ViewImports.cshtml"
-using ecomerce.Models;
+using ecomerce.Model;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"411c62d754daf80b1b9c682115d594d764792e21", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ea6d205dceb24ceeba6a920790a368fb04fd308d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4f2103fbe1883157b42866384f17234a0a33124d", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_LoginPartial", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -66,7 +66,7 @@ using ecomerce.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"ar\" dir=\"rtl\">\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "411c62d754daf80b1b9c682115d594d764792e213874", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "411c62d754daf80b1b9c682115d594d764792e213873", async() => {
                 WriteLiteral("\r\n    <meta charset=\"utf-8\">\r\n    <meta content=\"width=device-width, initial-scale=1.0\" name=\"viewport\">\r\n\r\n    <title>Smart Agriculture</title>\r\n    <meta");
                 BeginWriteAttribute("content", " content=\"", 255, "\"", 265, 0);
                 EndWriteAttribute();
@@ -114,7 +114,7 @@ using ecomerce.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "411c62d754daf80b1b9c682115d594d764792e217023", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "411c62d754daf80b1b9c682115d594d764792e217022", async() => {
                 WriteLiteral(@"
 
     <!-- ======= Header ======= -->
@@ -153,7 +153,7 @@ using ecomerce.Models;
                     </li> -->
                     <li><a class=""nav-link scrollto"" hr");
                 WriteLiteral("ef=\"#contact\">اتصل بنا</a></li>\r\n                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "411c62d754daf80b1b9c682115d594d764792e219534", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "411c62d754daf80b1b9c682115d594d764792e219533", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

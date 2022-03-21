@@ -33,8 +33,15 @@ using ecomerce.Areas.Identity.Pages;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\_ViewImports.cshtml"
+using ecomerce.Model;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f6ebae86d40004d00768c35aea29f9fd0820dc4a", @"/Areas/Identity/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19a8d3b2c78da7315fc7c3f55766e01cc42c4210", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"68e77753926f044835ad52930c98ecadb372eb4d", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998

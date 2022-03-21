@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
 
-// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
-// If you have enabled NRTs for your project, then un-comment the following line:
-// #nullable disable
-
-namespace ecomerce.Models
+namespace ecomerce.Model
 {
-    public partial class TblProduct
+    public class TblProduct
     {
-        
+        public TblProduct()
+        {
+            TblCarts = new HashSet<TblCart>();
+        }
 
         public int ProductId { get; set; }
         public string ProductName { get; set; }
@@ -24,9 +24,8 @@ namespace ecomerce.Models
         public bool? IsFeatured { get; set; }
         public int? Quantity { get; set; }
         public double? Price { get; set; }
-        [ForeignKey("CategoryId")]
+
         public virtual TblCategory Category { get; set; }
-        
-        
+        public virtual ICollection<TblCart> TblCarts { get; set; }
     }
 }

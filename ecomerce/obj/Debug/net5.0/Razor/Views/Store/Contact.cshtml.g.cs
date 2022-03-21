@@ -21,13 +21,13 @@ using ecomerce;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\user\source\repos\e-commerce2\ecomerce\Views\_ViewImports.cshtml"
-using ecomerce.Models;
+using ecomerce.Model;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0021950c242ce9d64e2eadc8cf2d070278fd2bdf", @"/Views/Store/Contact.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ea6d205dceb24ceeba6a920790a368fb04fd308d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4f2103fbe1883157b42866384f17234a0a33124d", @"/Views/_ViewImports.cshtml")]
     public class Views_Store_Contact : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -67,7 +67,7 @@ using ecomerce.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf6511", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf6510", async() => {
                 WriteLiteral(@"
     <meta charset=""UTF-8"">
     <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
@@ -79,7 +79,7 @@ using ecomerce.Models;
 
     <!-- custom css file link  -->
     ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf7156", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf7155", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -106,9 +106,9 @@ using ecomerce.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf9043", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf9042", async() => {
                 WriteLiteral("\r\n\r\n    <!-- header section starts  -->\r\n\r\n    <header>\r\n\r\n        <div class=\"header-2\">\r\n\r\n            <a href=\"#\" class=\"logo\"> ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf9450", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf9449", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -122,7 +122,7 @@ using ecomerce.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral(" Farmer House </a>\r\n\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf10570", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf10569", async() => {
                     WriteLiteral("\r\n                <input type=\"search\" id=\"search-bar\" placeholder=\"search here...\">\r\n                <label for=\"search-bar\" class=\"fas fa-search\"></label>\r\n            ");
                 }
                 );
@@ -217,7 +217,7 @@ using ecomerce.Models;
                 BeginWriteAttribute("allowfullscreen", " allowfullscreen=\"", 3333, "\"", 3351, 0);
                 EndWriteAttribute();
                 WriteLiteral(" loading=\"lazy\"></iframe>\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf14862", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf14861", async() => {
                     WriteLiteral(@"
                 <h3>تواصل معنا</h3>
                 <div class=""inputBox"">
@@ -300,7 +300,7 @@ using ecomerce.Models;
     <!-- footer section ends -->
     <!");
                 WriteLiteral("-- loader part  -->\r\n    <div class=\"loader-container\">\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf19217", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf19216", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -315,7 +315,7 @@ using ecomerce.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    </div>\r\n\r\n    <!-- js file link  -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf20444", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0021950c242ce9d64e2eadc8cf2d070278fd2bdf20443", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

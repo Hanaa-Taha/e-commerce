@@ -3,22 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ecomerce.Data;
+using ecomerce.Model;
 
 namespace ecomerce.Migrations
 {
-    [DbContext(typeof(ecomerceContext))]
-    [Migration("20220306205830_addmodel")]
-    partial class addmodel
+    [DbContext(typeof(dbSmartAgricultureContext))]
+    partial class dbSmartAgricultureContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.14")
+                .HasAnnotation("ProductVersion", "5.0.15")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -72,7 +70,87 @@ namespace ecomerce.Migrations
                     b.ToTable("AspNetRoleClaims");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("newApi.Model.AppUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -124,6 +202,15 @@ namespace ecomerce.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("fristName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("hasIotSystem")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("lastName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -137,91 +224,7 @@ namespace ecomerce.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("AspNetUserClaims");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
-                {
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("LoginProvider", "ProviderKey");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("AspNetUserLogins");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("UserId", "RoleId");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetUserRoles");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("UserId", "LoginProvider", "Name");
-
-                    b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("ecomerce.Models.TblCart", b =>
+            modelBuilder.Entity("newApi.Model.TblCart", b =>
                 {
                     b.Property<int>("CartId")
                         .ValueGeneratedOnAdd()
@@ -249,7 +252,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_Cart");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblCartStatus", b =>
+            modelBuilder.Entity("newApi.Model.TblCartStatus", b =>
                 {
                     b.Property<int>("CartStatusId")
                         .ValueGeneratedOnAdd()
@@ -267,7 +270,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_CartStatus");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblCategory", b =>
+            modelBuilder.Entity("newApi.Model.TblCategory", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
@@ -296,7 +299,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_Category");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblIotUsers", b =>
+            modelBuilder.Entity("newApi.Model.TblIotUsers", b =>
                 {
                     b.Property<int>("IotId")
                         .ValueGeneratedOnAdd()
@@ -308,9 +311,6 @@ namespace ecomerce.Migrations
 
                     b.Property<string>("MemberId")
                         .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("MembersId")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SerialNumber")
                         .HasMaxLength(50)
@@ -325,7 +325,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_IotUsers");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblProduct", b =>
+            modelBuilder.Entity("newApi.Model.TblProduct", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
@@ -381,30 +381,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_Product");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblRoles", b =>
-                {
-                    b.Property<int>("RoleId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("RoleName")
-                        .HasMaxLength(200)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(200)");
-
-                    b.HasKey("RoleId")
-                        .HasName("PK__Tbl_Role__8AFACE1A68AA8ABB");
-
-                    b.HasIndex("RoleName")
-                        .IsUnique()
-                        .HasDatabaseName("UQ__Tbl_Role__8A2B6160582CE7B7")
-                        .HasFilter("[RoleName] IS NOT NULL");
-
-                    b.ToTable("Tbl_Roles");
-                });
-
-            modelBuilder.Entity("ecomerce.Models.TblShippingDetails", b =>
+            modelBuilder.Entity("newApi.Model.TblShippingDetails", b =>
                 {
                     b.Property<int>("ShippingDetailId")
                         .ValueGeneratedOnAdd()
@@ -458,7 +435,7 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_ShippingDetails");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblSlideImage", b =>
+            modelBuilder.Entity("newApi.Model.TblSlideImage", b =>
                 {
                     b.Property<int>("SlideId")
                         .ValueGeneratedOnAdd()
@@ -491,7 +468,7 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("newApi.Model.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -500,7 +477,7 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("newApi.Model.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -515,7 +492,7 @@ namespace ecomerce.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("newApi.Model.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -524,27 +501,29 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
+                    b.HasOne("newApi.Model.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblCart", b =>
+            modelBuilder.Entity("newApi.Model.TblCart", b =>
                 {
-                    b.HasOne("ecomerce.Models.TblCartStatus", "CartStatus")
-                        .WithMany("TblCart")
+                    b.HasOne("newApi.Model.TblCartStatus", "CartStatus")
+                        .WithMany("TblCarts")
                         .HasForeignKey("CartStatusId")
                         .HasConstraintName("FK_Tbl_Cart_Tbl_CartStatus");
 
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Member")
-                        .WithMany()
-                        .HasForeignKey("MemberId");
+                    b.HasOne("newApi.Model.AppUser", "Member")
+                        .WithMany("TblCarts")
+                        .HasForeignKey("MemberId")
+                        .HasConstraintName("FK_Tbl_Cart_Tbl_Members");
 
-                    b.HasOne("ecomerce.Models.TblProduct", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId");
+                    b.HasOne("newApi.Model.TblProduct", "Product")
+                        .WithMany("TblCarts")
+                        .HasForeignKey("ProductId")
+                        .HasConstraintName("FK_Tbl_Cart_Tbl_Product");
 
                     b.Navigation("CartStatus");
 
@@ -553,42 +532,58 @@ namespace ecomerce.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblIotUsers", b =>
+            modelBuilder.Entity("newApi.Model.TblIotUsers", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Members")
-                        .WithMany()
-                        .HasForeignKey("MemberId");
+                    b.HasOne("newApi.Model.AppUser", "Member")
+                        .WithMany("TblIotUsers")
+                        .HasForeignKey("MemberId")
+                        .HasConstraintName("FK_IOT_users_Tbl_Members1");
 
-                    b.Navigation("Members");
+                    b.Navigation("Member");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblProduct", b =>
+            modelBuilder.Entity("newApi.Model.TblProduct", b =>
                 {
-                    b.HasOne("ecomerce.Models.TblCategory", "Category")
-                        .WithMany("TblProduct")
+                    b.HasOne("newApi.Model.TblCategory", "Category")
+                        .WithMany("TblProducts")
                         .HasForeignKey("CategoryId")
                         .HasConstraintName("FK__Tbl_Produ__Categ__398D8EEE");
 
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblShippingDetails", b =>
+            modelBuilder.Entity("newApi.Model.TblShippingDetails", b =>
                 {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Member")
-                        .WithMany()
-                        .HasForeignKey("MemberId");
+                    b.HasOne("newApi.Model.AppUser", "Member")
+                        .WithMany("TblShippingDetails")
+                        .HasForeignKey("MemberId")
+                        .HasConstraintName("FK__Tbl_Shipp__Membe__3A81B327");
 
                     b.Navigation("Member");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblCartStatus", b =>
+            modelBuilder.Entity("newApi.Model.AppUser", b =>
                 {
-                    b.Navigation("TblCart");
+                    b.Navigation("TblCarts");
+
+                    b.Navigation("TblIotUsers");
+
+                    b.Navigation("TblShippingDetails");
                 });
 
-            modelBuilder.Entity("ecomerce.Models.TblCategory", b =>
+            modelBuilder.Entity("newApi.Model.TblCartStatus", b =>
                 {
-                    b.Navigation("TblProduct");
+                    b.Navigation("TblCarts");
+                });
+
+            modelBuilder.Entity("newApi.Model.TblCategory", b =>
+                {
+                    b.Navigation("TblProducts");
+                });
+
+            modelBuilder.Entity("newApi.Model.TblProduct", b =>
+                {
+                    b.Navigation("TblCarts");
                 });
 #pragma warning restore 612, 618
         }

@@ -34,6 +34,13 @@ using ecomerce.Areas.Identity.Pages;
 #line hidden
 #nullable disable
 #nullable restore
+#line 5 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\_ViewImports.cshtml"
+using ecomerce.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\Account\_ViewImports.cshtml"
 using ecomerce.Areas.Identity.Pages.Account;
 
@@ -41,7 +48,7 @@ using ecomerce.Areas.Identity.Pages.Account;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f7c0a12112ce02dcf46e6ec35596dfbe30384566", @"/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19a8d3b2c78da7315fc7c3f55766e01cc42c4210", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"68e77753926f044835ad52930c98ecadb372eb4d", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6f613af1060c5084d9a9e6968a611bfad50b7663", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_RegisterConfirmation : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {

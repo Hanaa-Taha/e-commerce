@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ecomerce.Migrations
 {
-    public partial class addmodel : Migration
+    public partial class tables : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -41,7 +41,6 @@ namespace ecomerce.Migrations
                 {
                     IotId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    MembersId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SerialNumber = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: true),
                     MemberId = table.Column<string>(type: "nvarchar(450)", nullable: true)
@@ -50,24 +49,11 @@ namespace ecomerce.Migrations
                 {
                     table.PrimaryKey("PK_IOT_users", x => x.IotId);
                     table.ForeignKey(
-                        name: "FK_Tbl_IotUsers_AspNetUsers_MemberId",
+                        name: "FK_IOT_users_Tbl_Members1",
                         column: x => x.MemberId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Tbl_Roles",
-                columns: table => new
-                {
-                    RoleId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    RoleName = table.Column<string>(type: "varchar(200)", unicode: false, maxLength: 200, nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__Tbl_Role__8AFACE1A68AA8ABB", x => x.RoleId);
                 });
 
             migrationBuilder.CreateTable(
@@ -90,7 +76,7 @@ namespace ecomerce.Migrations
                 {
                     table.PrimaryKey("PK__Tbl_Ship__FBB36851C3557549", x => x.ShippingDetailId);
                     table.ForeignKey(
-                        name: "FK_Tbl_ShippingDetails_AspNetUsers_MemberId",
+                        name: "FK__Tbl_Shipp__Membe__3A81B327",
                         column: x => x.MemberId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
@@ -154,19 +140,19 @@ namespace ecomerce.Migrations
                 {
                     table.PrimaryKey("PK__Tbl_Cart__51BCD7B7F7E8BC66", x => x.CartId);
                     table.ForeignKey(
-                        name: "FK_Tbl_Cart_AspNetUsers_MemberId",
-                        column: x => x.MemberId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
                         name: "FK_Tbl_Cart_Tbl_CartStatus",
                         column: x => x.CartStatusId,
                         principalTable: "Tbl_CartStatus",
                         principalColumn: "CartStatusId",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Tbl_Cart_Tbl_Product_ProductId",
+                        name: "FK_Tbl_Cart_Tbl_Members",
+                        column: x => x.MemberId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Tbl_Cart_Tbl_Product",
                         column: x => x.ProductId,
                         principalTable: "Tbl_Product",
                         principalColumn: "ProductId",
@@ -213,13 +199,6 @@ namespace ecomerce.Migrations
                 filter: "[ProductName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "UQ__Tbl_Role__8A2B6160582CE7B7",
-                table: "Tbl_Roles",
-                column: "RoleName",
-                unique: true,
-                filter: "[RoleName] IS NOT NULL");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Tbl_ShippingDetails_MemberId",
                 table: "Tbl_ShippingDetails",
                 column: "MemberId");
@@ -232,9 +211,6 @@ namespace ecomerce.Migrations
 
             migrationBuilder.DropTable(
                 name: "Tbl_IotUsers");
-
-            migrationBuilder.DropTable(
-                name: "Tbl_Roles");
 
             migrationBuilder.DropTable(
                 name: "Tbl_ShippingDetails");

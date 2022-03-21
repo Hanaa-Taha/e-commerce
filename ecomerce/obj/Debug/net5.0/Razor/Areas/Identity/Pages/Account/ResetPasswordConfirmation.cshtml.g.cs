@@ -34,6 +34,13 @@ using ecomerce.Areas.Identity.Pages;
 #line hidden
 #nullable disable
 #nullable restore
+#line 5 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\_ViewImports.cshtml"
+using ecomerce.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\Account\_ViewImports.cshtml"
 using ecomerce.Areas.Identity.Pages.Account;
 
@@ -41,7 +48,7 @@ using ecomerce.Areas.Identity.Pages.Account;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fa2ad01473fa832304d2166b6c6d5536eb62725", @"/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19a8d3b2c78da7315fc7c3f55766e01cc42c4210", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"68e77753926f044835ad52930c98ecadb372eb4d", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6f613af1060c5084d9a9e6968a611bfad50b7663", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_ResetPasswordConfirmation : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
@@ -87,7 +94,7 @@ Write(ViewData["Title"]);
 #line hidden
 #nullable disable
             WriteLiteral("</h1>\r\n<p>\r\n    Your password has been reset. Please ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fa2ad01473fa832304d2166b6c6d5536eb627254776", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fa2ad01473fa832304d2166b6c6d5536eb627254968", async() => {
                 WriteLiteral("click here to log in");
             }
             );

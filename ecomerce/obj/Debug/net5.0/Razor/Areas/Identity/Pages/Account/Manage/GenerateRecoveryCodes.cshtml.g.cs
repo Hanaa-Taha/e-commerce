@@ -34,6 +34,13 @@ using ecomerce.Areas.Identity.Pages;
 #line hidden
 #nullable disable
 #nullable restore
+#line 5 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\_ViewImports.cshtml"
+using ecomerce.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\user\source\repos\e-commerce2\ecomerce\Areas\Identity\Pages\Account\_ViewImports.cshtml"
 using ecomerce.Areas.Identity.Pages.Account;
 
@@ -48,7 +55,7 @@ using ecomerce.Areas.Identity.Pages.Account.Manage;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"94bbb51319e230d0ee649286ee9a34bf11a1db2b", @"/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"19a8d3b2c78da7315fc7c3f55766e01cc42c4210", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"68e77753926f044835ad52930c98ecadb372eb4d", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6f613af1060c5084d9a9e6968a611bfad50b7663", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1d018c1b70b0080acf498fcec03859f2316c4c31", @"/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account_Manage_GenerateRecoveryCodes : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
@@ -94,7 +101,7 @@ using ecomerce.Areas.Identity.Pages.Account.Manage;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "94bbb51319e230d0ee649286ee9a34bf11a1db2b6391", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "94bbb51319e230d0ee649286ee9a34bf11a1db2b6583", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -136,7 +143,7 @@ Write(ViewData["Title"]);
     <p>
         Generating new recovery codes does not change the keys used in authenticator apps. If you wish to change the key
         used in an authenticator app you should ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94bbb51319e230d0ee649286ee9a34bf11a1db2b8830", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94bbb51319e230d0ee649286ee9a34bf11a1db2b9022", async() => {
                 WriteLiteral("reset your authenticator keys.");
             }
             );
@@ -152,7 +159,7 @@ Write(ViewData["Title"]);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    </p>\r\n</div>\r\n<div>\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94bbb51319e230d0ee649286ee9a34bf11a1db2b10042", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "94bbb51319e230d0ee649286ee9a34bf11a1db2b10234", async() => {
                 WriteLiteral("\r\n        <button class=\"btn btn-danger\" type=\"submit\">Generate Recovery Codes</button>\r\n    ");
             }
             );

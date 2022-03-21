@@ -1,5 +1,5 @@
 ﻿using System;
-using ecomerce.Data;
+using ecomerce.Model;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -15,12 +15,6 @@ namespace ecomerce.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDbContext<ecomerceContext>(options =>
-                    options.UseSqlServer(
-                        context.Configuration.GetConnectionString("ecomerceContextConnection")));
-
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<ecomerceContext>();
             });
         }
     }

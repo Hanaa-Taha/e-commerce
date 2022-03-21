@@ -1,35 +1,41 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ecomerce.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 
-namespace ecomerce.Data
+namespace ecomerce.Model
 {
-    public class ecomerceContext : IdentityDbContext<IdentityUser>
+    public partial class dbSmartAgricultureContext : IdentityDbContext<AppUser>
     {
-        public ecomerceContext(DbContextOptions<ecomerceContext> options)
-            : base(options)
-        {
-        }
 
-        protected ecomerceContext(DbContextOptions options)
+
+        public dbSmartAgricultureContext(DbContextOptions<dbSmartAgricultureContext> options)
             : base(options)
         {
         }
         public virtual DbSet<TblCart> TblCart { get; set; }
         public virtual DbSet<TblCartStatus> TblCartStatus { get; set; }
         public virtual DbSet<TblCategory> TblCategory { get; set; }
-        public virtual DbSet<TblIotUsers> TblIotUsers { get; set; }
-        public virtual DbSet<TblProduct> TblProduct { get; set; }
+        public virtual DbSet<TblIotUsers> TblIotUsers { get; set; }      
+        public virtual DbSet<TblProduct> TblProduct { get; set; }  
         public virtual DbSet<TblShippingDetails> TblShippingDetails { get; set; }
         public virtual DbSet<TblSlideImage> TblSlideImage { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("Server=DESKTOP-EQKKVG6\\SQLSERVERTWO;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
+                    //"Server=SQL5107.site4now.net;Database=db_a84349_argti;User Id=db_a84349_argti_admin;Password=@Aa123456789");
+            }
+        }
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<TblCart>(entity =>
             {
                 entity.HasKey(e => e.CartId)
@@ -38,13 +44,19 @@ namespace ecomerce.Data
                 entity.ToTable("Tbl_Cart");
 
                 entity.HasOne(d => d.CartStatus)
-                    .WithMany(p => p.TblCart)
+                    .WithMany(p => p.TblCarts)
                     .HasForeignKey(d => d.CartStatusId)
                     .HasConstraintName("FK_Tbl_Cart_Tbl_CartStatus");
 
-                
+                entity.HasOne(d => d.Member)
+                    .WithMany(p => p.TblCarts)
+                    .HasForeignKey(d => d.MemberId)
+                    .HasConstraintName("FK_Tbl_Cart_Tbl_Members");
 
-               
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.TblCarts)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("FK_Tbl_Cart_Tbl_Product");
             });
 
             modelBuilder.Entity<TblCartStatus>(entity =>
@@ -86,11 +98,14 @@ namespace ecomerce.Data
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                
+                entity.HasOne(d => d.Member)
+                    .WithMany(p => p.TblIotUsers)
+                    .HasForeignKey(d => d.MemberId)
+                    .HasConstraintName("FK_IOT_users_Tbl_Members1");
             });
 
-          
-
+         
+       
 
             modelBuilder.Entity<TblProduct>(entity =>
             {
@@ -116,26 +131,12 @@ namespace ecomerce.Data
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.Category)
-                    .WithMany(p => p.TblProduct)
+                    .WithMany(p => p.TblProducts)
                     .HasForeignKey(d => d.CategoryId)
                     .HasConstraintName("FK__Tbl_Produ__Categ__398D8EEE");
             });
 
-            modelBuilder.Entity<TblRoles>(entity =>
-            {
-                entity.HasKey(e => e.RoleId)
-                    .HasName("PK__Tbl_Role__8AFACE1A68AA8ABB");
-
-                entity.ToTable("Tbl_Roles");
-
-                entity.HasIndex(e => e.RoleName)
-                    .HasName("UQ__Tbl_Role__8A2B6160582CE7B7")
-                    .IsUnique();
-
-                entity.Property(e => e.RoleName)
-                    .HasMaxLength(200)
-                    .IsUnicode(false);
-            });
+           
 
             modelBuilder.Entity<TblShippingDetails>(entity =>
             {
@@ -170,6 +171,10 @@ namespace ecomerce.Data
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.HasOne(d => d.Member)
+                    .WithMany(p => p.TblShippingDetails)
+                    .HasForeignKey(d => d.MemberId)
+                    .HasConstraintName("FK__Tbl_Shipp__Membe__3A81B327");
             });
 
             modelBuilder.Entity<TblSlideImage>(entity =>
@@ -184,13 +189,13 @@ namespace ecomerce.Data
                 entity.Property(e => e.SlideTitle)
                     .HasMaxLength(500)
                     .IsUnicode(false);
-            }); 
+            });
 
-           base.OnModelCreating(modelBuilder);
-            // Customize the ASP.NET Identity model and override the defaults if needed.
-            // For example, you can rename the ASP.NET Identity table names and more.
-            // Add your customizations after calling base.OnModelCreating(builder);
-           
+            OnModelCreatingPartial(modelBuilder);
         }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
+
 }
+
