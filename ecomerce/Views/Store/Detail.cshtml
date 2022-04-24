@@ -1,0 +1,110 @@
+﻿
+@model ecomerce.Model.TblProduct
+@using AspNetCore
+@{
+    ViewData["Title"] = "Detail";
+}
+@*@{
+    var x= dbSmartAgricultureContext.
+    List<TblCart> products = _context.TblProduct.Include(c => c.Category).FirstOrDefault(c => c.ProductId == id);
+
+    Products product = null;
+    if (products != null)
+    {
+        product = products.FirstOrDefault(c => c.Id == Model.Id);
+    } }*@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-info">تفاصيل المنتج</h2>
+        <form asp-action="Detail" method="post" enctype="multipart/form-data">
+            <div class="p-4 rounded border row">
+                <div asp-validation-summary="ModelOnly" class="text-danger">
+
+                </div>
+                <div class="col-8">
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label asp-for="ProductName">اسم المنتج</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="hidden" asp-for="ProductId" />
+                            <input asp-for="ProductName" readonly="readonly" class="form-control" />
+                        </div>
+                        <span asp-validation-for="ProductName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label asp-for="Price">السعر</label>
+                        </div>
+                        <div class="col-8">
+                            <input asp-for="Price" readonly="readonly" class="form-control" />
+                        </div>
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    @*<div class="form-group row">
+                            <div class="col-4">
+                                <label asp-for="Image"></label>
+                            </div>
+                            <div class="col-8">
+                                <input asp-for="Image" class="form-control" type="file" />
+                            </div>
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>*@
+
+                    <div class="form-group row">
+                        <div class="col-4">
+                            <label>نوع المنتج</label>
+                        </div>
+                        <div class="col-8">
+                            @*<select asp-for="ProductTypeId" asp-items="ViewBag.productTypeId" class="form-control"></select>*@
+                            <input asp-for="Category.CategoryName" readonly="readonly" class="form-control" />
+                        </div>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-4">
+
+                        </div>
+                        <div class="col-8">
+                            @*@if (Model != null)
+                                {
+                                    <button type="submit" class="btn btn-danger form-control" asp-action="Remove" asp-route-id="@Model.ProductId">Remove to Cart</button> }
+                                else
+                                {*@
+                            <input type="submit" class="btn btn-info form-control" value="اضف الى العربة" />
+
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+
+                        
+                        <a asp-action="shop" class="btn btn-success">المتجر</a>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3">
+                    <img src="@Model.ProductImage" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef" />
+
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

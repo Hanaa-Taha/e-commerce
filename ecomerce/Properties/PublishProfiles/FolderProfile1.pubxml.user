@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\DELL\Desktop\azureNew</_PublishTargetUrl>
+    <History>True|2022-03-30T09:47:00.1077772Z;True|2022-03-30T09:16:08.4911322+02:00;True|2022-03-29T23:37:58.1991821+02:00;True|2022-03-28T23:55:55.8930986+02:00;</History>
+  </PropertyGroup>
+</Project>
