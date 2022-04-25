@@ -1,15 +1,9 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
-@model IEnumerable<ecomerce.Model.TblCart>
+﻿@model IEnumerable<ecomerce.Model.TblCart>
 
 @{ ViewData["Title"] = "Cart"; }
 
 <h1>Your Cart</h1>
-
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 <br />
 <div class="row">
     <table class="table table-bordered">
@@ -39,7 +33,7 @@
                     <td>@item.Product.Category.CategoryName</td>
                     <td>@item.Product.Description</td>
                     <td>
-                        <a asp-action="Remove" asp-controller="Home" asp-route-id="@item.ProductId" class="btn btn-danger">
+                        <a asp-action="Remove" asp-route-id="@item.CartId" class="btn btn-danger">
                             <i class="fas fa-trash-alt"></i>
                         </a>
                     </td>
@@ -57,4 +51,27 @@
         @*<h3>Grant Total : @Model.Sum(c => c.Product.Price) </h3>*@
         <a asp-action="Checkout" asp-controller="Order" class="btn btn-info">Process to Checkout</a>
     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>

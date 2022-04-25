@@ -1,5 +1,6 @@
 ﻿using ecomerce.Model;
 using ecomerce.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -14,10 +15,12 @@ namespace ecomerce.Controllers
     {
         private readonly dbSmartAgricultureContext _context;
         private readonly IUserService _userService;
+
         public StoreController(dbSmartAgricultureContext context, IUserService userService)
         {
             _context = context;
             _userService = userService;
+
         }
         public IActionResult Index()
         {
@@ -31,7 +34,7 @@ namespace ecomerce.Controllers
 
         public IActionResult Shop()
         {
-            return View(_context.TblProduct.Include(t=>t.Category).ToList());
+            return View(_context.TblProduct.Include(t => t.Category).ToList());
         }
 
         public IActionResult Features()
@@ -63,27 +66,24 @@ namespace ecomerce.Controllers
         {
             return View();
         }
+        //        public IActionResult addToCart(int id)
+        //        {
+        //            var cartItem = _context.TblProduct.SingleOrDefault(c => c.ProductId == id);
+        //            var userId = _userService.GetUserId();
+        //            if (cartItem != null)
+        //            {
+        //                // Create a new cart item if no cart item exists
+        //               var TblCart = new TblCart
+        //                {
+        //                    ProductId = cartItem.ProductId,
+        //                    MemberId = userId,
 
-        public IActionResult AddProduct()
-        {
-            return View();
-        }
-
-        public IActionResult AdminDashBoard()
-        {
-            return View();
-        }
-
-        public IActionResult Orders()
-        {
-            return View();
-        }
-
-        public IActionResult Chekout()
-        {
-            return View();
-        }
-
+        //                };
+        //                _context.TblCart.Add(TblCart);
+        //            }
+        //            _context.SaveChanges();
+        //            return null;
+        //        }
         public ActionResult Detail(int? id)
         {
 
@@ -118,7 +118,7 @@ namespace ecomerce.Controllers
             {
                 ProductId = product.ProductId,
                 MemberId = userId,
-
+                Quantity=1
             };
             _context.TblCart.Add(TblCart);
 
@@ -127,38 +127,43 @@ namespace ecomerce.Controllers
             return RedirectToAction(nameof(Index));
         }
         //GET Remove action methdo
-        //[ActionName("Remove")]
-        //public IActionResult RemoveToCart(int? id)
-        //{
-        //    List<Products> products = HttpContext.Session.Get<List<Products>>("products");
-        //    if (products != null)
-        //    {
-        //        var product = products.FirstOrDefault(c => c.Id == id);
-        //        if (product != null)
-        //        {
-        //            products.Remove(product);
-        //            HttpContext.Session.Set("products", products);
-        //        }
-        //    }
-        //    return RedirectToAction(nameof(Index));
-        //}
+        [ActionName("Remove")]
+        public IActionResult RemoveToCart(int? id)
+        {
+            var userId = _userService.GetUserId();
 
-        //[HttpPost]
+            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
+            if (cart != null)
+            {
+                var product = cart.FirstOrDefault(c => c.CartId == id);
+                if (product != null)
+                {
+                    _context.TblCart.Remove(product);
+                    _context.SaveChanges();
 
-        //public IActionResult Remove(int? id)
-        //{
-        //    List<Products> products = HttpContext.Session.Get<List<Products>>("products");
-        //    if (products != null)
-        //    {
-        //        var product = products.FirstOrDefault(c => c.Id == id);
-        //        if (product != null)
-        //        {
-        //            products.Remove(product);
-        //            HttpContext.Session.Set("products", products);
-        //        }
-        //    }
-        //    return RedirectToAction(nameof(Index));
-        //}
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+
+        public IActionResult Remove(int? id)
+        {
+            var userId = _userService.GetUserId();
+
+            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
+            if (cart != null)
+            {
+                var product = cart.FirstOrDefault(c => c.CartId == id);
+                if (product != null)
+                {
+                    _context.TblCart.Remove(product);
+                    _context.SaveChanges();
+                }
+            }
+            return RedirectToAction(nameof(Index));
+        }
         public IActionResult Cart()
         {
             var userId = _userService.GetUserId();
@@ -171,5 +176,9 @@ namespace ecomerce.Controllers
         }
 
 
+
+
     }
 }
+
+

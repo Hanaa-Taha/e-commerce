@@ -1,5 +1,4 @@
-﻿
-using ecomerce.Model;
+﻿using ecomerce.Model;
 using ecomerce.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,14 +28,14 @@ namespace ecomerce.Controllers
 
         }// GET: api/TblCarts
         //[HttpGet]
-        //public async Task>> GetTblCart()
+        //public async Task<ActionResult<IEnumerable<TblCart>>> GetTblCart()
         //{
         //    return  _context.TblCart.ToList();
         //}
 
         // GET: api/TblCarts/5
         [HttpGet("{userId}")]
-        public async Task <ActionResult<IEnumerable<TblCart>>> GetTblCart(string userId)
+        public async Task<ActionResult<IEnumerable<TblCart>>> GetTblCart(string userId)
         {
             var tblCart = await _context.TblCart.Include(s => s.Product).Where(s => s.MemberId == userId).ToListAsync();
 
@@ -83,7 +82,7 @@ namespace ecomerce.Controllers
         // POST: api/TblCarts
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<IActionResult> PostTblCart(CartModel cartModel)
+        public async Task<ActionResult<TblCart>> PostTblCart(CartModel cartModel)
         {
             var oldtblCart = await _context.TblCart.SingleOrDefaultAsync(s => s.MemberId == cartModel.MemberId && s.ProductId == cartModel.ProductId);
             if (oldtblCart != null)
@@ -128,7 +127,6 @@ namespace ecomerce.Controllers
                 return NotFound();
             }
 
-
             _context.TblCart.Remove(tblCart);
             await _context.SaveChangesAsync();
 
@@ -141,3 +139,5 @@ namespace ecomerce.Controllers
         }
     }
 }
+
+

@@ -1,0 +1,518 @@
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.exe
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Cosmos.CRTCompat.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\css\pay.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\css\style.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\css\wave.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\about.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\apple-touch-icon.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\counts-bg.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\favicon.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\features.svg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\footer-bg.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\hero-bg.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\hero-img.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-1.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-2.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-3.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-4.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-5.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-6.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-7.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-8.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-9.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-details-1.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-details-2.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\portfolio\portfolio-details-3.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\smart.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\svg.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\svg2.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\svg3.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\Quick access - Shortcut.lnk
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\testimonials-1.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\testimonials-2.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\testimonials-3.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\testimonials-4.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\img\testimonials\testimonials-5.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\js\main.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\aos\aos.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\aos\aos.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.json
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap-icons\index.html
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\css\animations.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\css\boxicons.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\css\boxicons.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\css\transformations.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\fonts\boxicons.eot
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\fonts\boxicons.svg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\fonts\boxicons.ttf
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\fonts\boxicons.woff
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\boxicons\fonts\boxicons.woff2
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\glightbox\css\glightbox.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\glightbox\css\glightbox.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\glightbox\js\glightbox.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\glightbox\js\glightbox.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\isotope-layout\isotope.pkgd.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\isotope-layout\isotope.pkgd.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\php-email-form\validate.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\purecounter\purecounter.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\swiper\swiper-bundle.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\assets\vendor\swiper\swiper-bundle.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\add.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\cst.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\font-awesome.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\iconsDashboard.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\login_proStore.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\ord.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleAdminDashBoard.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleDashboard.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleHome.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\testStore.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\loginStore.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\login_proStore.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\mainDashboard.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\mainHome.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\registerStore.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\scriptStore.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\testStore.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\LICENSE
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\css\font-awesome.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\css\font-awesome.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.eot
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.svg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.woff
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\fonts\FontAwesome.otf
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\HELP-US-OUT.txt
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\animated.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\bordered-pulled.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\core.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\fixed-width.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\font-awesome.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\icons.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\larger.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\list.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\mixins.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\path.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\rotated-flipped.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\screen-reader.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\stacked.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\less\variables.less
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\font-awesome.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_animated.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_bordered-pulled.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_core.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_fixed-width.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_icons.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_larger.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_list.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_mixins.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_path.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_rotated-flipped.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_screen-reader.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_stacked.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\font-awesome-4.7.0\scss\_variables.scss
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\fontawesome-webfont.eot
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\fontawesome-webfont.svg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\fontawesome-webfont.ttf
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\fontawesome-webfont.woff
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\fontawesome-webfont.woff2
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\fonts\FontAwesome.otf
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\about.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\banana.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\be deriver.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\be seller .png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (1).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (2).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (3).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (4).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (5).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (6).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (7).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (8).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\blogs (9).jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\carrot.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (1).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (2).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (3).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (4).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (5).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\client (6).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\cow.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\easypay.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\farm.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\fast.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\fertilizer.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\fruits.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\grapes.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\home-img-1.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\home-img-3.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\icons8-farm-64.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\kiwi.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\lemon.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\mangement.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\apple.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\b01b6f9da9e783fe96ba3b79930fddaf.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\ba1f1a5b09bb9c04d7d8f85bff158f4a.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\bananaaaa.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\banner_vegu.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\bouncing_fruits.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\farmer.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\fogg-downloading.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\green banner.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\hugo-25.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\icons8-3d-farm-48.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\icons8-3d-farm-96.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\icons8-farmer-64.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\icons8-smart-farm-64.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\loader.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\loginimg.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\mellow-collecting-grass.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\mellow-the-gardener.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\mobile.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\nature-icons-dribble.gif
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\orange.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\polar-135.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\potato.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\red onion.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\tomato.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\tomato.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\undraw_enter_uhqk.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\undraw_farm_girl_dnpe.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\undraw_Mobile_login_re_9ntv.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\undraw_my_password_d6kg.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\zucchini.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\onion.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\pablo-836.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (1).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (10).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (11).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (12).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (2).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (3).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (4).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (5).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (6).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (7).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (8).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (9).png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\quality.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\sammy-delivery-1.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\sammy-delivery.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\seeds.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\seller user.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\selleruser.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\team.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\tomato.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\tools.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\vegetables.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\wave.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\zucchini.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\الفرخة.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\بوابة المزرعة.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\فزاعة.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\101faee1-64d3-4037-81cf-675669da3f40_Landscape-Color.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\15498d30-f3dd-48c3-9dee-2298a3d24a35_fev wallp.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\1daec422-ba2c-484c-8e16-30d9ac7f3897_svg2.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\2f12e30b-fd98-4361-b57e-0136c3eed99c_Landscape-Color.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\314a75c2-f149-4c7b-851c-f7eb4ac4bd61_Landscape-Color.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\3286a9f5-1c97-4a8a-af49-7213e1e8ed65_image.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\5f9728cd-2810-40cd-b22d-b78c932f12de_svg.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\60755e79-7e6d-40e8-88c5-60cc639bd26d_task.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\76581915-68e7-4f4b-8bef-d843f73f3510_before.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\79367299-fe47-4115-ae55-bc0c9c538868_smart.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\81a3eed2-cd97-4ae9-a162-6f38a167fdac_undraw_mobile_user_7oqo.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\a4f06b45-e8eb-499d-aa13-5e61b205d825_image.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\b3f985c6-be61-4ff2-8613-b9fbfdc0ac48_fev wallp.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\b8951720-c467-4d9c-9297-dbb62fe1791b_fev wallp.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\c14b31b0-246d-443e-aa4b-318d1c394dba_smart.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\e0de146b-536a-42dc-bb45-102995244ae1_Landscape-Color.jpg
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\e9824db6-7b64-435e-b926-476586a5b814_fev wallp.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\productImages\fd266ef8-5492-49c9-9d89-c863d9f98357_svg3.png
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.runtimeconfig.json
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Abp.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Abp.AutoMapper.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Abp.Zero.Common.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Abp.ZeroCore.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Abp.ZeroCore.IdentityServer4.vNext.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\AutoMapper.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\AutoMapper.Collection.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Castle.Core.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Castle.Core.AsyncInterceptor.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Castle.Facilities.Logging.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Castle.Windsor.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Humanizer.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\IdentityModel.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\IdentityServer4.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\IdentityServer4.AspNetIdentity.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\IdentityServer4.Storage.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\JetBrains.Annotations.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\MailKit.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.Razor.Host.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Azure.DocumentDB.Core.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Globalization.CultureInfoCache.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Options.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.Primitives.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.Identity.Client.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\dotnet-aspnet-codegenerator-design.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\MimeKit.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Nito.AsyncEx.Context.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Nito.AsyncEx.Coordination.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Nito.AsyncEx.Tasks.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Nito.Collections.Deque.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Nito.Disposables.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\BouncyCastle.Crypto.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Composition.AttributedModel.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Composition.Convention.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Composition.Hosting.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Composition.Runtime.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Composition.TypedParts.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Linq.Dynamic.Core.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Runtime.Caching.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\System.Xml.XPath.XmlDocument.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\TimeZoneConverter.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win7-x64\native\Cosmos.CRTCompat.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win7-x64\native\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\css\site.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\favicon.ico
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\js\site.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\bootstrap\LICENSE\LICENSE
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation\dist\additional-methods.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery-validation\LICENSE.md
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery\dist\jquery.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery\dist\jquery.min.js
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery\dist\jquery.min.map
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\Identity\lib\jquery\LICENSE.txt
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.Views.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.Views.pdb
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\PubTmp\Out\ecomerce.deps.json

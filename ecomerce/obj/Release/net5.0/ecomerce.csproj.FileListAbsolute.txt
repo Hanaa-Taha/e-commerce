@@ -1331,3 +1331,5 @@ C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\bin\Release
 C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\bin\Release\net5.0\MimeKit.dll
 C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\bin\Release\net5.0\BouncyCastle.Crypto.dll
 C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\obj\Release\net5.0\Razor\Views\Home\SendMail.cshtml.g.cs
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\bin\Release\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\DELL\Desktop\e-commerce-updateModels - Copy - Copy\ecomerce\bin\Release\net5.0\Newtonsoft.Json.Bson.dll

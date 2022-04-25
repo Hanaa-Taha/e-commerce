@@ -2,6 +2,7 @@
 using ecomerce.Model;
 using ecomerce.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -15,25 +16,24 @@ namespace ecomerce.Controllers
 
     public class HomeController : Controller
     {
+        private readonly IUserService _userService;
         private readonly ILogger<HomeController> _logger;
         private readonly dbSmartAgricultureContext _context;
-        private readonly IUserService _userService;
         private readonly IMailingService _mailingService;
-        public HomeController(ILogger<HomeController> logger, dbSmartAgricultureContext context, IUserService userService, IMailingService mailingService)
-
-
+        public HomeController(IUserService userService, IMailingService mailingService, ILogger<HomeController> logger, dbSmartAgricultureContext context)
         {
             _context = context;
             _logger = logger;
-            _userService = userService;
             _mailingService = mailingService;
-
+            _userService = userService;
         }
 
         public IActionResult Index()
         {
+            //ViewData["seedprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 1));
+            //ViewData["toolprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 2));
+            //ViewData["ferprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 3));
             return View(_context.TblProduct.Include(t => t.Category).ToList());
-            
         }
 
         public IActionResult Privacy()
@@ -46,7 +46,6 @@ namespace ecomerce.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
         public ActionResult SendMail()
         {
             return View();
@@ -61,3 +60,5 @@ namespace ecomerce.Controllers
         }
     }
 }
+
+
