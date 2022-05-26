@@ -97,5 +97,7 @@ namespace ecomerce.Areas.Identity.Pages.Account.Manage
 
             return RedirectToPage();
         }
+
+
     }
 }

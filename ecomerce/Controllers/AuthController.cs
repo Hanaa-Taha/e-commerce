@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace ecomerce.Controllers
 {
@@ -24,10 +25,12 @@ namespace ecomerce.Controllers
     {
         private readonly IAuthService _authService;
         private readonly dbSmartAgricultureContext _context;
-        public AuthController(IAuthService authService, dbSmartAgricultureContext context)
+        private readonly UserManager<AppUser> _userManager;
+        public AuthController(UserManager<AppUser> userManager, IAuthService authService, dbSmartAgricultureContext context)
         {
             _authService = authService;
             _context = context;
+            _userManager = userManager;
         }
 
         [HttpPost("register")]
@@ -85,5 +88,51 @@ namespace ecomerce.Controllers
             return Ok();
         }
 
+
+
+
+        [HttpGet("GetHasIotVal/{UserName}")]        public async Task<IActionResult> GetHasIotVal(string UserName)        {                        var result = await _context.Users.Where(s => s.UserName == UserName).SingleOrDefaultAsync();            var allRoles = _userManager.GetRolesAsync(result).Result;            var role = false;            foreach (var EachRole in allRoles)
+            {
+                if (EachRole == "IOTUser")
+                {
+                    role = true;
+                }
+            }            if (result == null)            {                return NotFound();            }            var value = new HasIotModel { hasIotSystem = result.hasIotSystem , hasIotRole = role };            return Ok(value);        }
+
+
+
+
+        [HttpPost]
+        [Route("ChangePassword")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordModell model)
+        {
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound, "Email does not exit");
+                //return BadRequest("Email does not exit");
+            }
+            if (string.Compare(model.NewPassword,model.ConfirmNewPassword) !=0)
+            {
+                return StatusCode(StatusCodes.Status404NotFound, "the new password and confirm do not match");
+                //return BadRequest("the new pass and confirm do not match");
+            }
+
+            var result = await _userManager.ChangePasswordAsync(user,model.CurrentPassword,model.ConfirmNewPassword);
+            if (!result.Succeeded)
+            {
+                var errors = new List<string>();
+                foreach(var error in result.Errors)
+                {
+                    errors.Add(error.Description);
+                }
+
+                return BadRequest(errors);
+
+            }
+            return StatusCode(StatusCodes.Status200OK, " password successfully changed");
+
+        }
     }
 }

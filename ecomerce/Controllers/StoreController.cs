@@ -101,7 +101,7 @@ namespace ecomerce.Controllers
         }
         [HttpPost]
         [ActionName("Detail")]
-        public ActionResult ProductDetail(int? id)
+        public async Task<ActionResult> ProductDetail(int? id)
         {
 
             if (id == null)
@@ -114,17 +114,30 @@ namespace ecomerce.Controllers
             {
                 return NotFound();
             }
-            var TblCart = new TblCart
+
+            var oldtblCart = await _context.TblCart.SingleOrDefaultAsync(s => s.MemberId == userId && s.ProductId == product.ProductId);
+            if (oldtblCart != null)
             {
-                ProductId = product.ProductId,
-                MemberId = userId,
-                Quantity=1
-            };
-            _context.TblCart.Add(TblCart);
+                oldtblCart.Quantity = oldtblCart.Quantity + 1;
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            { 
+                var TblCart = new TblCart
+                {
+                    ProductId = product.ProductId,
+                    MemberId = userId,
+                    Quantity=1
+                };
+                _context.TblCart.Add(TblCart);
 
-            _context.SaveChanges();
+                _context.SaveChanges();
 
-            return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));
+            }
+
+                
         }
         //GET Remove action methdo
         [ActionName("Remove")]
@@ -171,6 +184,8 @@ namespace ecomerce.Controllers
             if (cart == null)
             {
                 cart = new List<TblCart>();
+                ViewBag.total = cart.Sum(item => item.Product.Price * item.Quantity);
+                
             }
             return View(cart);
         }

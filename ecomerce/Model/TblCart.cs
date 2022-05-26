@@ -8,7 +8,7 @@ namespace ecomerce.Model
     public class TblCart
     {
         public int CartId { get; set; }
-        public int? ProductId { get; set; }
+        public int ProductId { get; set; }
         public string MemberId { get; set; }
         public int? CartStatusId { get; set; }
         public int? Quantity { get; set; }

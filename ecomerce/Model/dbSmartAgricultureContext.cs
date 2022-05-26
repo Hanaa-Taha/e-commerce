@@ -23,19 +23,26 @@ namespace ecomerce.Model
         public virtual DbSet<TblShippingDetails> TblShippingDetails { get; set; }
         public virtual DbSet<TblSlideImage> TblSlideImage { get; set; }
 
+        public virtual DbSet<Discount> Discount { get; set; }
+        public virtual DbSet<CheckoutInfo> checkoutInfo { get; set; }
+        public virtual DbSet<payment_details> payment_details { get; set; }
+        public virtual DbSet<Order_details> Order_details { get; set; }
+        public virtual DbSet<Order_items> Order_items { get; set; }
+        public DbSet<ResetPassword> ResetPasswords { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 //optionsBuilder.UseSqlServer("Server=DESKTOP-EQKKVG6\\SQLSERVERTWO;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
-                optionsBuilder.UseSqlServer("Server=DESKTOP-B0KDJC5\\SQLEXPRESS;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
+                //optionsBuilder.UseSqlServer("Server=SQL8001.site4now.net;Database=db_a86305_dbsmartarg;User Id=db_a86305_dbsmartarg_admin;Password=@Aa123456789;Trusted_Connection=false;");
                 //"Server=SQL5107.site4now.net;Database=db_a84349_argti;User Id=db_a84349_argti_admin;Password=@Aa123456789");
                 //optionsBuilder.UseSqlServer("Server=SQL5103.site4now.net;Database=db_a84349_teamweb2022;User Id=db_a84349_teamweb2022_admin;Password=@Aa123456789;Trusted_Connection=false;");
-                
+                optionsBuilder.UseSqlServer("Server=DESKTOP-B0KDJC5\\SQLEXPRESS;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
             }
         }
-       
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -107,8 +114,8 @@ namespace ecomerce.Model
                     .HasConstraintName("FK_IOT_users_Tbl_Members1");
             });
 
-         
-       
+
+
 
             modelBuilder.Entity<TblProduct>(entity =>
             {
@@ -117,7 +124,7 @@ namespace ecomerce.Model
 
                 entity.ToTable("Tbl_Product");
 
-                
+
 
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
@@ -135,13 +142,17 @@ namespace ecomerce.Model
                     .WithMany(p => p.TblProducts)
                     .HasForeignKey(d => d.CategoryId)
                     .HasConstraintName("FK__Tbl_Produ__Categ__398D8EEE");
+                entity.HasOne(d => d.discount)
+                   .WithMany(p => p.TblProducts)
+                   .HasForeignKey(d => d.DiscountId)
+                   .HasConstraintName("FK_Tbl_Product_Discount");
                 entity.HasOne(d => d.Vendor)
                    .WithMany(p => p.TblProducts)
                    .HasForeignKey(d => d.VendorId)
                    .HasConstraintName("FK_Tbl_Produ_Tbl_Members");
             });
 
-           
+
 
             modelBuilder.Entity<TblShippingDetails>(entity =>
             {
@@ -195,6 +206,45 @@ namespace ecomerce.Model
                     .HasMaxLength(500)
                     .IsUnicode(false);
             });
+            modelBuilder.Entity<Discount>(entity =>
+            {
+                entity.HasKey(e => e.DiscountId)
+                    .HasName("PK_Discount");
+
+                entity.ToTable("Discount");
+
+
+                entity.Property(e => e.DiscountPercnt)
+                    .HasMaxLength(500)
+                    .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<ResetPassword>(entity =>
+            {
+                entity.HasKey(e => e.Id)
+                    .HasName("PK_ResetPassword");
+
+                entity.ToTable("ResetPassword");
+
+
+
+                entity.Property(e => e.Email).HasColumnType("nvarchar(256)");
+
+                entity.Property(e => e.Token).HasColumnType("nvarchar(MAX)");
+
+                entity.Property(e => e.OTP).HasColumnType("nchar(10)");
+                entity.Property(e => e.InsertDateTimeUTC).HasColumnType("datetime");
+
+
+              
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.resetPassword)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_ResetPassword_AspNetUsers");
+               
+            });
+
 
             OnModelCreatingPartial(modelBuilder);
         }

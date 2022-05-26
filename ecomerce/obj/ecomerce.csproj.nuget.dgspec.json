@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\e-commerce-updateModels - Copy - Copy\\ecomerce\\ecomerce.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\e-commerce-updateModels - Copy - Copy\\ecomerce\\ecomerce.csproj": {
+    "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\e-commerce-updateModels - Copy - Copy\\ecomerce\\ecomerce.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj",
         "projectName": "ecomerce",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\e-commerce-updateModels - Copy - Copy\\ecomerce\\ecomerce.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\e-commerce-updateModels - Copy - Copy\\ecomerce\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,6 +115,10 @@
             "MimeKit": {
               "target": "Package",
               "version": "[3.2.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.110.0, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

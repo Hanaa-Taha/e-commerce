@@ -228,28 +228,30 @@
                             <span asp-validation-for="Input.ConfirmPassword" class="text-danger" id="register_password"></span>
                         </div>
                     </div>
+                    
+
                     <p class="choice_text">
                         :اختر ماذا تريد أن تكون
                     </p>
                     <div class="choice_container">
-                        <label class="choice">
+                        <label >
                             بائع
-                            <input type="radio" checked="checked" name="radio">
+                            <input type="checkbox" asp-for="Input.check"  >
                             <span class="checkmark"></span>
 
                         </label>
-                        <label class="choice">
+                        <label >
                             مشتري
 
-                            <input type="radio" name="radio">
+                            <input type="checkbox" name="radio" checked="checked">
                             <span class="checkmark"></span>
                         </label>
-                        <label class="choice">
+                        @*<label class="choice">
                             كليهما
-                            <input type="radio" name="radio">
+                            <input type="checkbox" asp-for="check" name="radio" >
                             <span class="checkmark"></span>
 
-                        </label>
+                        </label>*@
 
                     </div>
 

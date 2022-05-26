@@ -33,7 +33,7 @@ namespace ecomerce.Controllers
             //ViewData["seedprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 1));
             //ViewData["toolprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 2));
             //ViewData["ferprodact"] = new SelectList(_context.TblProduct.Where(s => s.CategoryId == 3));
-            return View(_context.TblProduct.Include(t => t.Category).ToList());
+            return View(_context.TblProduct.Include(t => t.Category).Include(t=>t.discount).ToList());
         }
 
         public IActionResult Privacy()

@@ -23,7 +23,7 @@ namespace ecomerce.Services
             _mailSettings = mailSettings.Value;
         }
 
-        public async Task SendEmailAsync(string mailTo, string subject, string body, IList<IFormFile> attachments = null)
+        public async Task SendEmailAsync(string mailTo, string subject, string body/*, IList<IFormFile> attachments = null*/)
         {
             var email = new MimeMessage
             {
@@ -35,21 +35,21 @@ namespace ecomerce.Services
 
             var builder = new BodyBuilder();
 
-            if (attachments != null)
-            {
-                byte[] fileBytes;
-                foreach (var file in attachments)
-                {
-                    if (file.Length > 0)
-                    {
-                        using var ms = new MemoryStream();
-                        file.CopyTo(ms);
-                        fileBytes = ms.ToArray();
+            //if (attachments != null)
+            //{
+            //    byte[] fileBytes;
+            //    foreach (var file in attachments)
+            //    {
+            //        if (file.Length > 0)
+            //        {
+            //            using var ms = new MemoryStream();
+            //            file.CopyTo(ms);
+            //            fileBytes = ms.ToArray();
 
-                        builder.Attachments.Add(file.FileName, fileBytes, ContentType.Parse(file.ContentType));
-                    }
-                }
-            }
+            //            builder.Attachments.Add(file.FileName, fileBytes, ContentType.Parse(file.ContentType));
+            //        }
+            //    }
+            //}
 
             builder.HtmlBody = body;
             email.Body = builder.ToMessageBody();

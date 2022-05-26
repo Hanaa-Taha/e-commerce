@@ -21,9 +21,9 @@ namespace ecomerce.Controllers
         }
 
         [HttpPost("send")]
-        public async Task<IActionResult> SendMail([FromForm] MailRequestDto dto)
+        public async Task<IActionResult> SendMail([FromBody] MailRequestDto dto)
         {
-            await _mailingService.SendEmailAsync("enghanaa.22@gmail.com", dto.Subject, dto.Body);
+            await _mailingService.SendEmailAsync("agrigradproject2022@gmail.com", dto.Subject, dto.Body);
             return Ok();
         }
     }

@@ -1,0 +1,171 @@
+
+/*cart-page*/
+.cart-page .box-container {
+    margin: auto;
+    width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    background-color: var(--light_green);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 0.5rem var(--green);
+}
+
+.cart-page .box-container .cart-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cart-page .box-container .table {
+    margin: auto;
+    width: 98%;
+    font-size: 20px;
+    border-collapse: collapse;
+}
+
+    .cart-page .box-container .table tr {
+        margin-top: 50px;
+    }
+
+    .cart-page .box-container .table th, td {
+        text-align: center;
+        padding: 30px;
+    }
+
+.quantity {
+    width: 50px;
+    height: 50px;
+    padding-left: 16px;
+    border-radius: 3px;
+    font-size: 25px;
+}
+
+.cart-page .check-out {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    font-size: 20px;
+}
+
+.cart-page .check-out .back-btn {
+        width: 40%;
+}
+
+.cart-page .check-out .btn-success {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+    }
+
+.cart-page .check-out .total {
+        width: 60%;
+        display: flex;
+    }
+
+.cart-page .check-out .total h3 {
+            margin-top: 8px;
+            margin-left: 25px;
+            width: 40%;
+        }
+
+
+/* 
+table on mobile mode 
+*/
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+
+.cart-head
+{
+    width: 50%;
+    font-size: 17px;
+}
+
+.cart-page .check-out {
+    margin: auto;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+}
+
+.cart-page .check-out .total {
+    display: inline-block;
+}
+
+.cart-page .check-out .total h3 {
+     width: 250px;
+    display: inline-block;
+}
+
+.cart-page .check-out .back-btn {
+        display: inline-block;
+}
+
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr {
+    display: block;
+}
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+/* ﬂÊœ «‰Â Ì⁄„· Œÿ »Ì‰ ﬂ· „‰ Ã Ê «· «‰Ì */
+/* tr { border-bottom: 2px solid var(--brown); } */
+
+td {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%;
+}
+
+    td img {
+        width: 150px;
+        height: 100px;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    /*
+ Label the data
+ */
+    td:nth-of-type(1):before {
+        content: "«·’Ê—…";
+    }
+
+    td:nth-of-type(2):before {
+        content: "«·«”„";
+    }
+
+    td:nth-of-type(3):before {
+        content: "«·ﬂ„Ì…";
+    }
+
+    td:nth-of-type(4):before {
+        content: "«·”⁄—";
+    }
+
+    td:nth-of-type(5):before {
+        content: "‰Ê⁄ «·„‰ Ã";
+    }
+
+    td:nth-of-type(6):before {
+        content: "«··Ê‰";
+    }
+
+    td:nth-of-type(7):before {
+        content: " ";
+    }
+}

@@ -110,6 +110,7 @@ namespace ecomerce.Services
             authModel.hasIotSystem = user.hasIotSystem;
             authModel.firstName = user.firstName;
             authModel.lastName = user.lastName;
+            authModel.profileImage = user.profileImage;
             return authModel;
         }
         public async Task<string> AddRoleAsync(AddRoleModel model)

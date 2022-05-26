@@ -12,5 +12,6 @@ namespace ecomerce.Services
         Task<AuthModel> GetLoginAsync(TokenRequestModel model);
         Task<string> AddRoleAsync(AddRoleModel model);
 
+        
     }
 }

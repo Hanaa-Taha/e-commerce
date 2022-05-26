@@ -3,6 +3,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
+:root {
+    --green: #57ac3f;
+    --brown: #3a290f;
+    --light_green: #d3eac0;
+    /* #d3fdad */
+}
+
 body {
     margin: 0px;
 }
@@ -13,13 +20,22 @@ body {
 }
 
     .dashboard .navigation {
+        position: fixed;
+        display: flex;
+        top: 0px;
+        z-index: 1;
+        background-color: white;
+        /*left: 0px;*/
+        align-items: baseline;
+    }
+        /* .dashboard .navigation {
         display: fixed;
         box-shadow: 1px 1px 40px rgba(216, 211, 211, 0.836);
         justify-content: space-between;
         width: 100%;
         margin-right: 0px;
         right: 0;
-    }
+    }*/
 
         .dashboard .navigation img.user {
             width: 50px;
@@ -31,11 +47,12 @@ body {
             margin-left: 12px;
             margin-right: 5px;
             font-size: 30px;
-            color: black;
+            color: var(--brown);
         }
 
             .dashboard .navigation div .material-icons-outlined:hover {
                 cursor: pointer;
+                color: white
             }
 
         .dashboard .navigation div span:hover {
@@ -43,7 +60,7 @@ body {
             width: 60px;
             height: 40px;
             text-align: center;
-            background-color: black;
+            background-color: var(--green);
             color: white;
         }
 
@@ -68,7 +85,7 @@ body {
                 width: 100%;
                 font-size: 16px;
                 padding: 10px 10px 10px 60px;
-                border: 1px solid rgb(209, 207, 207);
+                border: 1px solid var(--green);
                 background-color: rgba(0 0 0 / 0);
             }
 
@@ -76,7 +93,7 @@ body {
                 position: absolute;
                 left: 15px;
                 top: 10px;
-                color: rgb(209, 207, 207);
+                color: var(--green);
             }
 
         .dashboard .main .search .notifications {
@@ -92,7 +109,7 @@ body {
                     content: '';
                     width: 10px;
                     height: 10px;
-                    background-color: sandybrown;
+                    background-color: var(--green);
                     position: absolute;
                     border-radius: 50%;
                     top: 5px;
@@ -134,7 +151,7 @@ meter {
     width: 100%;
     max-width: 190px;
     font-size: 20px;
-    color: #727272;
+    color: var(--brown);
     margin-left: 30px;
 }
 
@@ -142,7 +159,7 @@ meter {
     width: 100%;
     height: 0;
     padding-bottom: 50%;
-    background: #727272;
+    background: var(--light_green);
     position: relative;
     border-top-left-radius: 100% 200%;
     border-top-right-radius: 100% 200%;
@@ -155,7 +172,7 @@ meter {
     left: 0;
     width: inherit;
     height: 100%;
-    background: rgb(255, 148, 145);
+    background: var(--green);
     transform-origin: center top;
     transform: rotate(0.25turn);
     transition: transform 0.2s ease-out;
@@ -182,12 +199,12 @@ meter {
     font-size: 20px;
     line-height: 0;
     margin-left: 50px;
-    color: black;
+    color: var(--brown);
     font-weight: bolder;
 }
 
 .dashboard .main .info_list .info p {
-    color: #727272;
+    color: var(--brown);
     margin-bottom: 20px;
 }
 
@@ -205,7 +222,7 @@ meter {
         font-size: 30px;
         font-weight: bolder;
         margin-left: 40px;
-        color: black;
+        color: var(--brown);
     }
 
     .dashboard .main .info_list .info .flex {
@@ -219,7 +236,7 @@ meter {
     .dashboard .main .info_list .info .category {
         width: 30px;
         height: 50px;
-        background-color: black;
+        background-color: var(--brown);
         border-radius: 10px 0px 0px 10px;
         position: absolute;
         right: 0;
@@ -243,8 +260,8 @@ meter {
 .weather {
     height: 200px;
     display: flex;
-    background-image: url('https://www.wallpaperuse.com/wallp/25-252084_m.jpg');
-    background-repeat: no-repeat;
+    /*    background-image: url('https://www.wallpaperuse.com/wallp/25-252084_m.jpg');
+*/ background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
     padding: 20px 20px 20px 60px;

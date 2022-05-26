@@ -133,6 +133,26 @@ namespace ecomerce.Controllers
             return Ok();
         }
 
+        [HttpDelete("DeleteAllTblCart/{userId}")]
+        public async Task<IActionResult> DeleteAllTblCart(string userId)
+        {
+            var tblCart = await _context.TblCart.Where(s => s.MemberId == userId ).ToListAsync();
+            if (tblCart == null)
+            {
+                return NotFound();
+            }
+
+            foreach (var item in tblCart)
+            {
+                _context.TblCart.Remove(item);
+            }
+            
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
         private bool TblCartExists(int id)
         {
             return _context.TblCart.Any(e => e.CartId == id);

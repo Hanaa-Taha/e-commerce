@@ -18,6 +18,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
 using ecomerce.Settings;
+using ecomerce.Data;
+using Stripe;
 
 namespace ecomerce
 {
@@ -36,6 +38,7 @@ namespace ecomerce
             services.Configure<JWT>(Configuration.GetSection("JWT"));
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
             services.AddTransient<IMailingService,MailingService>();
+            
             services.AddDbContext<dbSmartAgricultureContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("Default")));
@@ -71,13 +74,39 @@ namespace ecomerce
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Key"]))
                     };
                 });
+
+            //services.Configure<IdentityOptions>(opts =>
+            //{
+            //    opts.User.RequireUniqueEmail = true;
+                
+
+            //    opts.SignIn.RequireConfirmedEmail = true;
+
+            //    opts.Lockout.AllowedForNewUsers = true;
+            //    opts.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+            //    opts.Lockout.MaxFailedAccessAttempts = 3;
+            //});
+
+
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+
+            });
+
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
 
             services.AddMvc();
             services.AddControllersWithViews();
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
             services.AddDbContext<dbSmartAgricultureContext>();
+
             services.AddRazorPages();
             services.AddScoped<IUserService, UserService>();
             services.AddAutoMapper(typeof(Startup));
@@ -87,6 +116,7 @@ namespace ecomerce
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.ApiKey = "sk_test_51KxFLjKcqUX17Ez0AEf4baGXN8uEA2lIVU8dwuxoLXhiBJ7armCGRVIPv4wfz54kcmsLsjbrQyqrH8QcHbBW5JiY00Xc6CRjkR";
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -101,17 +131,34 @@ namespace ecomerce
             }
             app.UseHttpsRedirection();
             app.UseDefaultFiles();
+
+
+            app.Use(async (context, next) => 
+            {   
+                context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+                await next(); 
             
-            
-            
+            });
+
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
-           // app.UseJwtTokenMiddleware();
+            // app.UseJwtTokenMiddleware();
             //app.UseMvcWithDefaultRoute();
+
+
+
+
+            app.UseSession();
+
+
+
+
+
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

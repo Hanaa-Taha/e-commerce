@@ -2,24 +2,30 @@
 
 @{ ViewData["Title"] = "Cart"; }
 
-<h1>Your Cart</h1>
-<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-<br />
-<div class="row">
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Product Type</th>
-                <th>Color</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+@*<h1>Your Cart</h1>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <br />
+    <div class="row">
+
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+
+                    <th>CategoryName</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                @foreach (var item in Model)
+                {
                 <tr>
 
 
@@ -29,29 +35,166 @@
                             <img src="@item.Product.ProductImage" width="200px" height="150px" />}
                     </td>
                     <td>@item.Product.ProductName</td>
-                    <td>@item.Product.Price</td>
+
                     <td>@item.Product.Category.CategoryName</td>
                     <td>@item.Product.Description</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Price</td>
+
                     <td>
                         <a asp-action="Remove" asp-route-id="@item.CartId" class="btn btn-danger">
-                            <i class="fas fa-trash-alt"></i>
+                            <i class="fas fa-trash-alt">Remove</i>
                         </a>
                     </td>
                 </tr>
-            }
-        </tbody>
-    </table>
-</div>
-<div class="row">
-    <div class="col-6">
-        <a asp-action="Index" asp-controller="Home" class="btn btn-success">Back to Home</a>
+                }
+                <tr>
+                    <td colspan="5" class="text-right"><b>Total: @Model.Sum(c => (c.Product.Price * c.Quantity)) </b></td>
+
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="col-6 text-right">
-        <h3>Total Amount</h3>
-        @*<h3>Grant Total : @Model.Sum(c => c.Product.Price) </h3>*@
-        <a asp-action="Checkout" asp-controller="Order" class="btn btn-info">Process to Checkout</a>
+    <div class="row">
+        <div class="col-6">
+            <a asp-action="Index" asp-controller="Home" class="btn btn-success">Back to Home</a>
+        </div>
+        <div class="col-6 text-right">
+
+            <h3>Grant Total : @Model.Sum(c =>( c.Product.Price *c.Quantity)) </h3>
+            <a asp-action="Checkout" asp-controller="Order" class="btn btn-info">Process to Checkout</a>
+            <a asp-controller="Store" asp-action="index">Continue Shopping</a>
+            <br>
+            <a asp-controller="Checkout" asp-action="Index">Go To Checkout</a>
+        </div>
+    </div>*@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmer house-cart page</title>
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"></script>
+
+    <!--      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- custom css file link  -->
+
+
+    <link href="~/css/testStore.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <partial name="_header" />
+
+    <!-- header section ends -->
+    <!--head part-->
+
+    <div class="head cart-head">
+        <h1>سلة المشتريات</h1>
     </div>
-</div>
+
+    <!--cart-page starts-->
+    <section class="cart-page">
+
+        <div class="box-container">
+            <div class="cart-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>الصورة</th>
+                            <th>الاسم</th>
+                            <th>الكمية</th>
+                            <th>السعر</th>
+                            <th>نوع المنتج</th>
+                            <th>اللون</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+
+
+
+
+                       
+
+
+                            <td>
+                                @if (@item.Product.ProductImage != null)
+                                {
+                                <img src="@item.Product.ProductImage" width="200px" height="150px" />
+                                }
+                                
+                            </td>
+                            <td>@item.Product.ProductName</td>
+                            <td>
+                                <input type="number" class="quantity" value="@item.Product.Quantity" id="quantity" min="1" max="10">
+                            </td>
+                            <td>@item.Product.Price</td>
+                            <td>@item.Product.Category.CategoryName</td>
+                            <td>@item.Product.Description</td>
+                            <td>
+                                <a asp-action="Remove" asp-route-id="@item.CartId" class="btn btn-danger">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+}
+                        </tbody>
+                </table>
+
+
+            </div>
+
+        </div>
+        <div class="check-out">
+            <div class="back-btn">
+                <a asp-action="Index" asp-controller="Home" class="btn btn-success ">الرجوع إلي الصفحة الرئيسية</a>
+            </div>
+            <div class="total">
+                <div class="back-btn "><a asp-action="Index" asp-controller="Checkout" class="btn btn-info">اضغط للدفع </a></div>
+                <h3 class=" item-1">السعر الكلي : @Model.Sum(c => (c.Product.Price * c.Product.Quantity))</h3>
+                <h3 class="item-2">الكمية الكلية :@Model.Sum(c => (c.Product.Quantity)) </h3>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--cart-page ends-->
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>روابط سريعة</h3>
+                <a href="home.html"> <i class="fas fa-tractor"></i> الصفحة الرئيسية </a>
+                <a href="shop.html"> <i class="fas fa-tractor"></i> المتجر</a>
+                <a href="features.html"> <i class="fas fa-tractor"></i> المميزات</a>
+                <a href="about.html"> <i class="fas fa-tractor"></i> معلومات عنا</a>
+                <a href="review.html"> <i class="fas fa-tractor"></i>المراجعات</a>
+                <a href="blog.html"> <i class="fas fa-tractor"></i> المقالات</a>
+                <a href="contact.html"> <i class="fas fa-tractor"></i>  اتصل بنا</a>
+            </div>
+
+            <div class="box">
+                <h3>روابط إضافية</h3>
+                <a href="#"> <i class="fas fa-tractor"></i> طلبي</a>
 
 
 
@@ -73,5 +216,8 @@
 
 
 
-
-</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

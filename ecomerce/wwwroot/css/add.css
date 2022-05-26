@@ -13,6 +13,7 @@ p {
     font-size: 15px;
     line-height: 25px !important;
     font-weight: 500
+    
 }
 
 .container {
@@ -21,7 +22,9 @@ p {
 }
 
 .btn {
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    
+    
 }
 
 select:active {

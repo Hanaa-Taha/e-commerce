@@ -11,6 +11,10 @@ namespace ecomerce.Model
         public IFormFile file { get; set; }
         public string CategoryName { get; set; }
 
-        
+        public int DiscountPercnt { get; set; }
+        public bool check { get; set; }
+
+
+
     }
 }

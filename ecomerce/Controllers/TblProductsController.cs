@@ -37,7 +37,7 @@ namespace ecomerce.Controllers
            
             var userId = _userService.GetUserId();
             var isLoggedIn = _userService.IsAuthenticated();
-            var dbSmartAgricultureContext = _context.TblProduct.Include(t => t.Category).Include(t => t.Vendor).Where(s => s.VendorId == userId);
+            var dbSmartAgricultureContext = _context.TblProduct.Include(t => t.Category).Include(t => t.Vendor).Include(x=>x.discount).Where(s => s.VendorId == userId);
             return View(await dbSmartAgricultureContext.ToListAsync());
         }
 
@@ -66,6 +66,8 @@ namespace ecomerce.Controllers
             
             ViewData["CategoryName"] = new SelectList(_context.TblCategory, "CategoryName", "CategoryName");
             ViewData["VendorId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["DiscountPercnt"] = new SelectList(_context.Discount, "DiscountPercnt", "DiscountPercnt");
+
 
             return View();
         }
@@ -76,10 +78,10 @@ namespace ecomerce.Controllers
         [Authorize(Roles = "Vendor")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,VendorId,CategoryId,IsActive,IsDelete,CreatedDate,ModifiedDate,Description,ProductImage,IsFeatured,Quantity,Price,file,CategoryName")] productForm tblProduct)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,VendorId,CategoryId,IsActive,IsDelete,CreatedDate,ModifiedDate,Description,ProductImage,IsFeatured,Quantity,Price,file,CategoryName,DiscountId,DiscountPercnt, check")] productForm tblProduct)
         {
 
-
+            Nullable<int> disId = null;
             var userId = _userService.GetUserId();
             var isLoggedIn = _userService.IsAuthenticated();
             if (ModelState.IsValid)
@@ -93,6 +95,12 @@ namespace ecomerce.Controllers
                    await tblProduct.file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
 
                 }
+               
+                if (tblProduct.check == true)
+                {
+                    disId = _context.Discount.Where(s => s.DiscountPercnt == tblProduct.DiscountPercnt).SingleOrDefault().DiscountId;
+
+                }
                 var newtblProduct = new TblProduct
                 {
                     ProductName = tblProduct.ProductName,
@@ -100,19 +108,22 @@ namespace ecomerce.Controllers
                     ModifiedDate = DateTime.UtcNow,
                     CreatedDate = DateTime.UtcNow,
                     ProductImage = tblProduct.ProductImage,
-                    VendorId=userId,
-                    CategoryId=_context.TblCategory.Where(s => s.CategoryName == tblProduct.CategoryName).SingleOrDefault().CategoryId,
-                    Description= tblProduct.Description,
-                    Quantity=tblProduct.Quantity
-
-            };
+                    VendorId = userId,
+                    CategoryId = _context.TblCategory.Where(s => s.CategoryName == tblProduct.CategoryName).SingleOrDefault().CategoryId,
+                    Description = tblProduct.Description,
+                    Quantity = tblProduct.Quantity,
+                    DiscountId = disId
+                    //DiscountId=1
+                };
 
                 _context.Add(newtblProduct);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryName"] = new SelectList(_context.TblCategory, "CategoryName", "CategoryName", tblProduct.CategoryId);
-           // ViewData["VendorId"] = new SelectList(_context.Users, "Id", "Id", tblProduct.VendorId);
+            ViewData["DiscountPercnt"] = new SelectList(_context.Discount, "DiscountPercnt", "DiscountPercnt");
+
+            // ViewData["VendorId"] = new SelectList(_context.Users, "Id", "Id", tblProduct.VendorId);
             return View(tblProduct);
         }
 

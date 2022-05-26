@@ -18,6 +18,7 @@ namespace ecomerce.Model
         public bool hasIotSystem { get; set; }
         public string firstName{ get; set; }
         public string lastName { get; set; }
+        public string profileImage { get; set; }
 
     }
 }

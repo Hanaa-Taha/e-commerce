@@ -146,6 +146,20 @@ namespace ecomerce.Controllers
                     "Error retrieving data from the database");
             }
         }
+        
+
+        [HttpGet("DiscountProducts")]
+        public async Task<ActionResult<IEnumerable<TblProduct>>> DiscountProducts()
+        {
+            var tblProduct = await _context.TblProduct.Where(s=>s.DiscountId != null).Include(s=>s.discount).ToListAsync();
+
+
+            //return await _context.TblProduct.ToListAsync();
+            return Ok(_mapper.Map<IEnumerable<TblProduct>>(tblProduct));
+        }
+
+
+
     }
 }
 

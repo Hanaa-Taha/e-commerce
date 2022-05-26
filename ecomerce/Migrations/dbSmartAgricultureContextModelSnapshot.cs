@@ -211,6 +211,9 @@ namespace ecomerce.Migrations
                     b.Property<string>("lastName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("profileImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -222,6 +225,136 @@ namespace ecomerce.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.CheckoutInfo", b =>
+                {
+                    b.Property<int>("checkoutInfoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("MemberId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("city")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("district")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("governorate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("phone")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("propertyNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("specialMarque")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("street")
+                        .HasColumnType("nvarchar(max)");
+
+                    //b.Property<string>("userId")
+                    //    .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("checkoutInfoId");
+
+                    b.HasIndex("MemberId");
+
+                    b.ToTable("CheckoutInfo");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Discount", b =>
+                {
+                    b.Property<int>("DiscountId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DiscountPercnt")
+                        .HasMaxLength(500)
+                        .IsUnicode(false)
+                        .HasColumnType("int");
+
+                    b.HasKey("DiscountId")
+                        .HasName("PK_Discount");
+
+                    b.ToTable("Discount");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Order_details", b =>
+                {
+                    b.Property<int>("orderDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    //b.Property<int>("PaymentId")
+                    //    .HasColumnType("int");
+
+                    b.Property<int?>("PaymentspaymentDetailsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("checkoutInfoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("orderDetailsId");
+
+                    b.HasIndex("PaymentspaymentDetailsId");
+
+                    b.HasIndex("checkoutInfoId");
+
+                    b.ToTable("Order_details");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Order_items", b =>
+                {
+                    b.Property<int>("orderItemsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TblProductProductId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("orderDetailsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("productId")
+                        .HasColumnType("int");
+
+                    b.HasKey("orderItemsId");
+
+                    b.HasIndex("TblProductProductId");
+
+                    b.HasIndex("orderDetailsId");
+
+                    b.ToTable("Order_items");
                 });
 
             modelBuilder.Entity("ecomerce.Model.TblCart", b =>
@@ -344,6 +477,9 @@ namespace ecomerce.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("varchar");
 
+                    b.Property<int?>("DiscountId")
+                        .HasColumnType("int");
+
                     b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
 
@@ -378,6 +514,8 @@ namespace ecomerce.Migrations
                         .HasName("PK__Tbl_Prod__B40CC6CD13FC4977");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("DiscountId");
 
                     b.HasIndex("VendorId");
 
@@ -460,6 +598,33 @@ namespace ecomerce.Migrations
                     b.ToTable("Tbl_SlideImage");
                 });
 
+            modelBuilder.Entity("ecomerce.Model.payment_details", b =>
+                {
+                    b.Property<int>("paymentDetailsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("amount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("provider")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("paymentDetailsId");
+
+                    b.ToTable("payment_details");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -511,6 +676,49 @@ namespace ecomerce.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ecomerce.Model.CheckoutInfo", b =>
+                {
+                    b.HasOne("ecomerce.Model.AppUser", "Member")
+                        .WithMany("checkoutInfo")
+                        .HasForeignKey("MemberId");
+
+                    b.Navigation("Member");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Order_details", b =>
+                {
+                    b.HasOne("ecomerce.Model.payment_details", "Payments")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("PaymentspaymentDetailsId");
+
+                    b.HasOne("ecomerce.Model.CheckoutInfo", "checkoutInfo")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("checkoutInfoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("checkoutInfo");
+
+                    b.Navigation("Payments");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Order_items", b =>
+                {
+                    b.HasOne("ecomerce.Model.TblProduct", "TblProduct")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("TblProductProductId");
+
+                    b.HasOne("ecomerce.Model.Order_details", "OrderDetails")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("orderDetailsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrderDetails");
+
+                    b.Navigation("TblProduct");
+                });
+
             modelBuilder.Entity("ecomerce.Model.TblCart", b =>
                 {
                     b.HasOne("ecomerce.Model.TblCartStatus", "CartStatus")
@@ -552,12 +760,19 @@ namespace ecomerce.Migrations
                         .HasForeignKey("CategoryId")
                         .HasConstraintName("FK__Tbl_Produ__Categ__398D8EEE");
 
+                    b.HasOne("ecomerce.Model.Discount", "discount")
+                        .WithMany("TblProducts")
+                        .HasForeignKey("DiscountId")
+                        .HasConstraintName("FK_Tbl_Product_Discount");
+
                     b.HasOne("ecomerce.Model.AppUser", "Vendor")
                         .WithMany("TblProducts")
                         .HasForeignKey("VendorId")
                         .HasConstraintName("FK_Tbl_Produ_Tbl_Members");
 
                     b.Navigation("Category");
+
+                    b.Navigation("discount");
 
                     b.Navigation("Vendor");
                 });
@@ -574,6 +789,8 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("ecomerce.Model.AppUser", b =>
                 {
+                    b.Navigation("checkoutInfo");
+
                     b.Navigation("TblCarts");
 
                     b.Navigation("TblIotUsers");
@@ -581,6 +798,21 @@ namespace ecomerce.Migrations
                     b.Navigation("TblProducts");
 
                     b.Navigation("TblShippingDetails");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.CheckoutInfo", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Discount", b =>
+                {
+                    b.Navigation("TblProducts");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.Order_details", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("ecomerce.Model.TblCartStatus", b =>
@@ -595,7 +827,14 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("ecomerce.Model.TblProduct", b =>
                 {
+                    b.Navigation("OrderItems");
+
                     b.Navigation("TblCarts");
+                });
+
+            modelBuilder.Entity("ecomerce.Model.payment_details", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }
