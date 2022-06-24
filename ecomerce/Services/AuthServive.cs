@@ -19,12 +19,14 @@ namespace ecomerce.Services
 
     public class AuthServive : IAuthService
     {
+        private readonly dbSmartAgricultureContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly JWT _jwt;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AuthServive(UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt)
+        public AuthServive(dbSmartAgricultureContext context, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt)
         {
+            _context = context;
             _userManager = userManager;
             _jwt = jwt.Value;
             _roleManager = roleManager;
@@ -65,6 +67,14 @@ namespace ecomerce.Services
 
             var jwtSecurityToken = await CreateJwtToken(user);
 
+
+            var cart = new TblCart
+            {
+                MemberId = user.Id
+            };
+            _context.TblCart.Add(cart);
+            _context.SaveChanges();
+
             return new AuthModel
             {
                 Email = user.Email,
@@ -80,6 +90,8 @@ namespace ecomerce.Services
                 
 
             };
+
+
 
 
         }

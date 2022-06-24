@@ -13102,11 +13102,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj",
+      "projectUniqueName": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj",
       "projectName": "ecomerce",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\ecomerce.csproj",
+      "projectPath": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\e-commerce-checkOut&roles - Copy\\ecomerce\\obj\\",
+      "outputPath": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

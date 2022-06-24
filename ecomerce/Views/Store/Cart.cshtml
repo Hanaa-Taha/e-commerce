@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ecomerce.Model.TblCart>
+﻿@model IEnumerable<ecomerce.Model.CartItems>
 
 @{ ViewData["Title"] = "Cart"; }
 
@@ -133,21 +133,21 @@
 
 
                             <td>
-                                @if (@item.Product.ProductImage != null)
+                                @if (@item.TblProduct.ProductImage != null)
                                 {
-                                <img src="@item.Product.ProductImage" width="200px" height="150px" />
+                                <img src="@item.TblProduct.ProductImage" width="200px" height="150px" />
                                 }
                                 
                             </td>
-                            <td>@item.Product.ProductName</td>
+                            <td>@item.TblProduct.ProductName</td>
                             <td>
-                                <input type="number" class="quantity" value="@item.Product.Quantity" id="quantity" min="1" max="10">
+                                <input type="number" class="quantity" value="@item.TblProduct.Quantity" id="quantity" min="1" max="10">
                             </td>
-                            <td>@item.Product.Price</td>
-                            <td>@item.Product.Category.CategoryName</td>
-                            <td>@item.Product.Description</td>
+                            <td>@item.TblProduct.Price</td>
+                            <td>@item.TblProduct.Category.CategoryName</td>
+                            <td>@item.TblProduct.Description</td>
                             <td>
-                                <a asp-action="Remove" asp-route-id="@item.CartId" class="btn btn-danger">
+                                <a asp-action="Remove" asp-route-id="@item.TblProductProductId" class="btn btn-danger">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                             </td>
@@ -166,8 +166,8 @@
             </div>
             <div class="total">
                 <div class="back-btn "><a asp-action="Index" asp-controller="Checkout" class="btn btn-info">اضغط للدفع </a></div>
-                <h3 class=" item-1">السعر الكلي : @Model.Sum(c => (c.Product.Price * c.Product.Quantity))</h3>
-                <h3 class="item-2">الكمية الكلية :@Model.Sum(c => (c.Product.Quantity)) </h3>
+                <h3 class=" item-1">السعر الكلي : @Model.Sum(c => (c.TblProduct.Price * c.TblProduct.Quantity))</h3>
+                <h3 class="item-2">الكمية الكلية :@Model.Sum(c => (c.TblProduct.Quantity)) </h3>
 
             </div>
         </div>

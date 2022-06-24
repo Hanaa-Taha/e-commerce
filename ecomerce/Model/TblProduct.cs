@@ -9,7 +9,7 @@ namespace ecomerce.Model
     {
         public TblProduct()
         {
-            TblCarts = new HashSet<TblCart>();
+            CartItems = new HashSet<CartItems>();
             OrderItems = new HashSet<Order_items>();
         }
         public int ProductId { get; set; }
@@ -30,7 +30,7 @@ namespace ecomerce.Model
         public virtual Discount discount { get; set; }
         public virtual AppUser Vendor { get; set; }
         public virtual TblCategory Category { get; set; }
-        public virtual ICollection<TblCart> TblCarts { get; set; }
+        public virtual ICollection<CartItems> CartItems { get; set; }
         public virtual ICollection<Order_items> OrderItems { get; set; }
 
     }

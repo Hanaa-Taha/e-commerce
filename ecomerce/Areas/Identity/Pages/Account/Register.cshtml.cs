@@ -25,18 +25,21 @@ namespace ecomerce.Areas.Identity.Pages.Account
         private readonly UserManager<AppUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly dbSmartAgricultureContext _context;
 
         public RegisterModel(
             UserManager<AppUser> userManager,
             SignInManager<AppUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender
+            IEmailSender emailSender,
+            dbSmartAgricultureContext context
             )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _context = context;
         }
 
         [BindProperty]
@@ -119,11 +122,19 @@ namespace ecomerce.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
                     await _userManager.AddToRoleAsync(user, "User");
+
                     if (Input.check == true)
                     {
                         await _userManager.AddToRoleAsync(user, "Vendor");
 
                     }
+
+                    var cart = new TblCart
+                    {
+                        MemberId = user.Id
+                    };
+                    _context.TblCart.Add(cart);
+                    _context.SaveChanges();
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

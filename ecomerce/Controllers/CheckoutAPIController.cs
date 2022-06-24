@@ -241,7 +241,7 @@ namespace ecomerce.Controllers
 
         [HttpPost("PostAllDetails")]
 
-        public async Task<ActionResult<CheckoutAllModels>> PostAllDetails([FromBody] CheckoutAllModels model)
+        public async Task<ActionResult<CheckoutAllModels>> PostAllDetails([FromBody] CheckoutAllModels model )
         {
             if (!ModelState.IsValid) { return NotFound(); }
 
@@ -289,7 +289,23 @@ namespace ecomerce.Controllers
                     await _context.SaveChangesAsync();
                 }
                 //return Ok(orderItems);
+
+
             }
+
+            var tblCartId = _context.TblCart.Where(s => s.MemberId == model.userId).FirstOrDefault();
+            var tblCart = await _context.CartItems.Where(s => s.tblCartId == tblCartId.CartId).ToListAsync();
+            if (tblCart == null)
+            {
+                return NotFound();
+            }
+
+            foreach (var item in tblCart)
+            {
+                _context.CartItems.Remove(item);
+            }
+
+            await _context.SaveChangesAsync();
             return Ok();
 
             //}

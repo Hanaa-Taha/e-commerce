@@ -28,7 +28,7 @@ namespace ecomerce.Controllers
         {
             var userId = _userService.GetUserId();
 
-            var cart = _context.TblCart.Include(c => c.Product).Where(s => s.MemberId == userId).ToList();
+            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
 
             checkInfoWithCart checkInfoWithCart = new checkInfoWithCart { carts = cart  };
 
@@ -40,7 +40,12 @@ namespace ecomerce.Controllers
             //long total = ViewBag.total;
             //TotalAmount = total.ToString();
 
-            ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item =>( item.Product.Price * item.Product.Quantity));
+
+
+
+
+
+            //ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item =>( item.Product.Price * item.Product.Quantity));
             ViewBag.total = Math.Round(ViewBag.DollarAmount, 2) * 100;
             ViewBag.total = Convert.ToInt64(ViewBag.total);
             long total = ViewBag.total;
@@ -119,10 +124,12 @@ namespace ecomerce.Controllers
                 _context.Order_details.Add(result);
                 await _context.SaveChangesAsync();
 
-                var tblCart = await _context.TblCart.Include(s => s.Product).Where(s => s.MemberId == userId).ToListAsync();
+
+                //.Include(s => s.Product)
+                var tblCart = await _context.TblCart.Where(s => s.MemberId == userId).ToListAsync();
                 foreach (var product in tblCart)
                 {
-                    var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId && s.productId == product.ProductId);
+                    var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId );
                     if (oldOrderItems != null)
                     {
                         oldOrderItems.Quantity = oldOrderItems.Quantity + 1;
@@ -133,7 +140,7 @@ namespace ecomerce.Controllers
                     {
                         Order_items orderItems = new Order_items
                         {
-                            productId = product.ProductId,
+                            //productId = product.ProductId,
                             orderDetailsId = result.orderDetailsId,
                             Quantity = 1,
                             ModifiedDate = DateTime.UtcNow,
@@ -178,10 +185,13 @@ namespace ecomerce.Controllers
                 _context.Order_details.Add(result);
                 await _context.SaveChangesAsync();
 
-                var tblCart = await _context.TblCart.Include(s => s.Product).Where(s => s.MemberId == userId).ToListAsync();
+
+
+                //.Include(s => s.Product)
+                var tblCart = await _context.TblCart.Where(s => s.MemberId == userId).ToListAsync();
                 foreach (var product in tblCart)
                 {
-                    var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId && s.productId == product.ProductId);
+                    var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId );
                     if (oldOrderItems != null)
                     {
                         oldOrderItems.Quantity = oldOrderItems.Quantity + 1;
@@ -192,7 +202,7 @@ namespace ecomerce.Controllers
                     {
                         Order_items orderItems = new Order_items
                         {
-                            productId = product.ProductId,
+                            //productId = product.ProductId,
                             orderDetailsId = result.orderDetailsId,
                             Quantity = 1,
                             ModifiedDate = DateTime.UtcNow,

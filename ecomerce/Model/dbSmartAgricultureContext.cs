@@ -29,6 +29,7 @@ namespace ecomerce.Model
         public virtual DbSet<Order_details> Order_details { get; set; }
         public virtual DbSet<Order_items> Order_items { get; set; }
         public DbSet<ResetPassword> ResetPasswords { get; set; }
+        public DbSet<CartItems> CartItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,8 +37,8 @@ namespace ecomerce.Model
             {
                 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 //optionsBuilder.UseSqlServer("Server=DESKTOP-EQKKVG6\\SQLSERVERTWO;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
-                //optionsBuilder.UseSqlServer("Server=SQL8001.site4now.net;Database=db_a86305_dbsmartarg;User Id=db_a86305_dbsmartarg_admin;Password=@Aa123456789;Trusted_Connection=false;");
-                //"Server=SQL5107.site4now.net;Database=db_a84349_argti;User Id=db_a84349_argti_admin;Password=@Aa123456789");
+                //optionsBuilder.UseSqlServer("Server=SQL8002.site4now.net;Database=db_a88f3c_newweb19992022;User Id=db_a88f3c_newweb19992022_admin;Password=@Aa123456789;Trusted_Connection=false;");
+                
                 //optionsBuilder.UseSqlServer("Server=SQL5103.site4now.net;Database=db_a84349_teamweb2022;User Id=db_a84349_teamweb2022_admin;Password=@Aa123456789;Trusted_Connection=false;");
                 optionsBuilder.UseSqlServer("Server=DESKTOP-B0KDJC5\\SQLEXPRESS;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
             }
@@ -63,10 +64,10 @@ namespace ecomerce.Model
                     .HasForeignKey(d => d.MemberId)
                     .HasConstraintName("FK_Tbl_Cart_Tbl_Members");
 
-                entity.HasOne(d => d.Product)
-                    .WithMany(p => p.TblCarts)
-                    .HasForeignKey(d => d.ProductId)
-                    .HasConstraintName("FK_Tbl_Cart_Tbl_Product");
+                //entity.HasOne(d => d.Product)
+                //    .WithMany(p => p.TblCarts)
+                //    .HasForeignKey(d => d.ProductId)
+                //    .HasConstraintName("FK_Tbl_Cart_Tbl_Product");
             });
 
             modelBuilder.Entity<TblCartStatus>(entity =>

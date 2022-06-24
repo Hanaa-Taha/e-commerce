@@ -227,6 +227,33 @@ namespace ecomerce.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("ecomerce.Model.CartItems", b =>
+                {
+                    b.Property<int>("cartItemsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TblProductProductId")
+                        .HasColumnType("int");
+
+                    
+
+                    b.Property<int>("tblCartId")
+                        .HasColumnType("int");
+
+                    b.HasKey("cartItemsId");
+
+                    b.HasIndex("TblProductProductId");
+
+                    b.HasIndex("tblCartId");
+
+                    b.ToTable("CartItems");
+                });
+
             modelBuilder.Entity("ecomerce.Model.CheckoutInfo", b =>
                 {
                     b.Property<int>("checkoutInfoId")
@@ -261,14 +288,11 @@ namespace ecomerce.Migrations
                     b.Property<string>("street")
                         .HasColumnType("nvarchar(max)");
 
-                    //b.Property<string>("userId")
-                    //    .HasColumnType("nvarchar(max)");
-
                     b.HasKey("checkoutInfoId");
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("CheckoutInfo");
+                    b.ToTable("checkoutInfo");
                 });
 
             modelBuilder.Entity("ecomerce.Model.Discount", b =>
@@ -302,10 +326,7 @@ namespace ecomerce.Migrations
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("datetime2");
 
-                    //b.Property<int>("PaymentId")
-                    //    .HasColumnType("int");
-
-                    b.Property<int?>("PaymentspaymentDetailsId")
+                    b.Property<int>("PaymentspaymentDetailsId")
                         .HasColumnType("int");
 
                     b.Property<int>("checkoutInfoId")
@@ -357,6 +378,40 @@ namespace ecomerce.Migrations
                     b.ToTable("Order_items");
                 });
 
+            modelBuilder.Entity("ecomerce.Model.ResetPassword", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<DateTime>("InsertDateTimeUTC")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("OTP")
+                        .HasMaxLength(10)
+                        .HasColumnType("nchar(10)");
+
+                    b.Property<string>("Token")
+                        .HasMaxLength(5000)
+                        .HasColumnType("nvarchar(MAX)");
+
+                    b.Property<string>("UserId")
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id")
+                        .HasName("PK_ResetPassword");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ResetPassword");
+                });
+
             modelBuilder.Entity("ecomerce.Model.TblCart", b =>
                 {
                     b.Property<int>("CartId")
@@ -370,20 +425,12 @@ namespace ecomerce.Migrations
                     b.Property<string>("MemberId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Quantity")
-                        .HasColumnType("int");
-
                     b.HasKey("CartId")
                         .HasName("PK__Tbl_Cart__51BCD7B7F7E8BC66");
 
                     b.HasIndex("CartStatusId");
 
                     b.HasIndex("MemberId");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("Tbl_Cart");
                 });
@@ -676,6 +723,23 @@ namespace ecomerce.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ecomerce.Model.CartItems", b =>
+                {
+                    b.HasOne("ecomerce.Model.TblProduct", "TblProduct")
+                        .WithMany("CartItems")
+                        .HasForeignKey("TblProductProductId");
+
+                    b.HasOne("ecomerce.Model.TblCart", "TblCart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("tblCartId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TblCart");
+
+                    b.Navigation("TblProduct");
+                });
+
             modelBuilder.Entity("ecomerce.Model.CheckoutInfo", b =>
                 {
                     b.HasOne("ecomerce.Model.AppUser", "Member")
@@ -689,7 +753,9 @@ namespace ecomerce.Migrations
                 {
                     b.HasOne("ecomerce.Model.payment_details", "Payments")
                         .WithMany("OrderDetails")
-                        .HasForeignKey("PaymentspaymentDetailsId");
+                        .HasForeignKey("PaymentspaymentDetailsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("ecomerce.Model.CheckoutInfo", "checkoutInfo")
                         .WithMany("OrderDetails")
@@ -719,6 +785,16 @@ namespace ecomerce.Migrations
                     b.Navigation("TblProduct");
                 });
 
+            modelBuilder.Entity("ecomerce.Model.ResetPassword", b =>
+                {
+                    b.HasOne("ecomerce.Model.AppUser", "User")
+                        .WithMany("resetPassword")
+                        .HasForeignKey("UserId")
+                        .HasConstraintName("FK_ResetPassword_AspNetUsers");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ecomerce.Model.TblCart", b =>
                 {
                     b.HasOne("ecomerce.Model.TblCartStatus", "CartStatus")
@@ -731,16 +807,9 @@ namespace ecomerce.Migrations
                         .HasForeignKey("MemberId")
                         .HasConstraintName("FK_Tbl_Cart_Tbl_Members");
 
-                    b.HasOne("ecomerce.Model.TblProduct", "Product")
-                        .WithMany("TblCarts")
-                        .HasForeignKey("ProductId")
-                        .HasConstraintName("FK_Tbl_Cart_Tbl_Product");
-
                     b.Navigation("CartStatus");
 
                     b.Navigation("Member");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("ecomerce.Model.TblIotUsers", b =>
@@ -791,6 +860,8 @@ namespace ecomerce.Migrations
                 {
                     b.Navigation("checkoutInfo");
 
+                    b.Navigation("resetPassword");
+
                     b.Navigation("TblCarts");
 
                     b.Navigation("TblIotUsers");
@@ -815,6 +886,11 @@ namespace ecomerce.Migrations
                     b.Navigation("OrderItems");
                 });
 
+            modelBuilder.Entity("ecomerce.Model.TblCart", b =>
+                {
+                    b.Navigation("CartItems");
+                });
+
             modelBuilder.Entity("ecomerce.Model.TblCartStatus", b =>
                 {
                     b.Navigation("TblCarts");
@@ -827,9 +903,9 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("ecomerce.Model.TblProduct", b =>
                 {
-                    b.Navigation("OrderItems");
+                    b.Navigation("CartItems");
 
-                    b.Navigation("TblCarts");
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("ecomerce.Model.payment_details", b =>

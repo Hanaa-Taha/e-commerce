@@ -115,10 +115,10 @@ namespace ecomerce.Controllers
                 return NotFound();
             }
 
-            var oldtblCart = await _context.TblCart.SingleOrDefaultAsync(s => s.MemberId == userId && s.ProductId == product.ProductId);
+            var oldtblCart = await _context.TblCart.SingleOrDefaultAsync(s => s.MemberId == userId );
             if (oldtblCart != null)
             {
-                oldtblCart.Quantity = oldtblCart.Quantity + 1;
+                //oldtblCart.Quantity = oldtblCart.Quantity + 1;
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -126,9 +126,9 @@ namespace ecomerce.Controllers
             { 
                 var TblCart = new TblCart
                 {
-                    ProductId = product.ProductId,
+                    //ProductId = product.ProductId,
                     MemberId = userId,
-                    Quantity=1
+                    //Quantity=1
                 };
                 _context.TblCart.Add(TblCart);
 
@@ -165,13 +165,14 @@ namespace ecomerce.Controllers
         {
             var userId = _userService.GetUserId();
 
-            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
-            if (cart != null)
+            var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
+            var cartItem = _context.CartItems.Where(s => s.tblCartId == cart.CartId).ToList();
+            if (cartItem != null)
             {
-                var product = cart.FirstOrDefault(c => c.CartId == id);
+                var product = cartItem.FirstOrDefault(c => c.TblProductProductId == id &&  c.tblCartId == cart.CartId);
                 if (product != null)
                 {
-                    _context.TblCart.Remove(product);
+                    _context.CartItems.Remove(product);
                     _context.SaveChanges();
                 }
             }
@@ -180,14 +181,15 @@ namespace ecomerce.Controllers
         public IActionResult Cart()
         {
             var userId = _userService.GetUserId();
-            var cart = _context.TblCart.Include(d => d.Member).Include(d => d.Product).Include(d => d.Product.Category).Where(s => s.MemberId == userId).ToList();
-            if (cart == null)
+            var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
+            var cartItem = _context.CartItems.Where(s => s.tblCartId == cart.CartId).Include(c=>c.TblProduct).ToList();
+            if (cartItem == null)
             {
-                cart = new List<TblCart>();
-                ViewBag.total = cart.Sum(item => item.Product.Price * item.Quantity);
+                cartItem = new List<CartItems>();
+                ViewBag.total = cartItem.Sum(item => item.TblProduct.Price * item.Quantity);
                 
             }
-            return View(cart);
+            return View(cartItem);
         }
 
 
