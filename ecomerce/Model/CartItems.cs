@@ -9,7 +9,7 @@ namespace ecomerce.Model
     {
 
         public int cartItemsId { get; set; }
-        public int tblCartId { get; set; }
+        public string userId { get; set; }
         public int TblProductProductId { get; set; }
         public int Quantity { get; set; }
         public virtual TblCart TblCart { get; set; }

@@ -37,10 +37,10 @@ namespace ecomerce.Controllers
         [HttpGet("{userId}")]
         public async Task<ActionResult<IEnumerable<CartItems>>> GetTblCart(string userId)
         {
-            var tblCart = await _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefaultAsync();
 
-            var cartItem = await _context.CartItems.Where(s => s.tblCartId == tblCart.CartId).ToListAsync();
-            if (cartItem == null)
+            var cart = await _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefaultAsync();
+            var cartItem = await _context.CartItems.Where(s => s.userId == userId).Include(s=>s.TblProduct).ToListAsync();
+            if (cart == null)
             {
                 return NotFound();
             }
@@ -50,10 +50,10 @@ namespace ecomerce.Controllers
 
         // PUT: api/TblCarts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblCart(int id, CartItems CartItems)
+        [HttpPut("{cartItemsId}")]
+        public async Task<IActionResult> PutTblCart(int cartItemsId, CartItems CartItems)
         {
-            if (id != CartItems.cartItemsId)
+            if (cartItemsId != CartItems.cartItemsId)
             {
                 return BadRequest();
             }
@@ -66,7 +66,7 @@ namespace ecomerce.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!TblCartExists(id))
+                if (!TblCartExists(cartItemsId))
                 {
                     return NotFound();
                 }
@@ -87,8 +87,8 @@ namespace ecomerce.Controllers
 
             
 
-            var cart = _context.TblCart.Where(s => s.MemberId == cartModel.userId).FirstOrDefault();
-            var oldtblCart = await _context.CartItems.SingleOrDefaultAsync(s => s.tblCartId == cart.CartId && s.TblProductProductId == cartModel.ProductId);
+            
+            var oldtblCart = await _context.CartItems.SingleOrDefaultAsync(s => s.userId == cartModel.userId && s.TblProductProductId == cartModel.ProductId);
             if (oldtblCart != null)
             {
                 oldtblCart.Quantity = oldtblCart.Quantity + 1;
@@ -100,8 +100,8 @@ namespace ecomerce.Controllers
                 CartItems cartItem = new CartItems
                 {
                     TblProductProductId = cartModel.ProductId,
-                    tblCartId = cart.CartId,
-                    Quantity = 1
+                    userId = cartModel.userId,
+                    Quantity = cartModel.Quantity
                 };
                 _context.CartItems.Add(cartItem);
                 await _context.SaveChangesAsync();
@@ -109,10 +109,10 @@ namespace ecomerce.Controllers
                 return CreatedAtAction("GetTblCart", new { id = cartItem.cartItemsId }, cartItem);
             }
         }
-        [HttpPatch("{id}")]
-        public async Task<IActionResult> UpdateAuthPatch([FromBody] JsonPatchDocument cart, [FromRoute] int id)
+        [HttpPatch("{cartItemsId}")]
+        public async Task<IActionResult> UpdateAuthPatch([FromBody] JsonPatchDocument cart, [FromRoute] int cartItemsId)
         {
-            var tblCart = await _context.CartItems.FindAsync(id);
+            var tblCart = await _context.CartItems.FindAsync(cartItemsId);
             if (tblCart != null)
             {
                 cart.ApplyTo(tblCart);
@@ -122,10 +122,10 @@ namespace ecomerce.Controllers
         }
 
         // DELETE: api/TblCarts/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTblCart(int id)
+        [HttpDelete("{cartItemsId}")]
+        public async Task<IActionResult> DeleteTblCart(int cartItemsId)
         {
-            var tblCart = await _context.CartItems.SingleOrDefaultAsync(s => s.cartItemsId == id );
+            var tblCart = await _context.CartItems.SingleOrDefaultAsync(s => s.cartItemsId == cartItemsId);
             if (tblCart == null)
             {
                 return NotFound();
@@ -137,10 +137,10 @@ namespace ecomerce.Controllers
             return Ok();
         }
 
-        [HttpDelete("DeleteAllTblCart/{tblCartId}")]
-        public async Task<IActionResult> DeleteAllTblCart(int tblCartId)
+        [HttpDelete("DeleteAllTblCart/{userId}")]
+        public async Task<IActionResult> DeleteAllTblCart(string userId)
         {
-            var tblCart = await _context.CartItems.Where(s => s.tblCartId == tblCartId).ToListAsync();
+            var tblCart = await _context.CartItems.Where(s => s.userId == userId).ToListAsync();
             if (tblCart == null)
             {
                 return NotFound();

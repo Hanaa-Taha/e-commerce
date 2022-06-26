@@ -13,7 +13,7 @@ namespace ecomerce.Model
 
             CartItems = new HashSet<CartItems>();
         }
-        public int CartId { get; set; }
+        
         //public int ProductId { get; set; }
         public string MemberId { get; set; }
         public int? CartStatusId { get; set; }

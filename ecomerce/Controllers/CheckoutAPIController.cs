@@ -294,7 +294,7 @@ namespace ecomerce.Controllers
             }
 
             var tblCartId = _context.TblCart.Where(s => s.MemberId == model.userId).FirstOrDefault();
-            var tblCart = await _context.CartItems.Where(s => s.tblCartId == tblCartId.CartId).ToListAsync();
+            var tblCart = await _context.CartItems.Where(s => s.userId == tblCartId.MemberId).ToListAsync();
             if (tblCart == null)
             {
                 return NotFound();

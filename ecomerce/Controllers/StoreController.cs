@@ -141,17 +141,17 @@ namespace ecomerce.Controllers
         }
         //GET Remove action methdo
         [ActionName("Remove")]
-        public IActionResult RemoveToCart(int? id)
+        public IActionResult RemoveToCart(string? id)
         {
             var userId = _userService.GetUserId();
 
-            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
+            var cart = _context.CartItems.Where(s => s.userId == userId).ToList();
             if (cart != null)
             {
-                var product = cart.FirstOrDefault(c => c.CartId == id);
+                var product = cart.FirstOrDefault(c => c.userId == id);
                 if (product != null)
                 {
-                    _context.TblCart.Remove(product);
+                    _context.CartItems.Remove(product);
                     _context.SaveChanges();
 
                 }
@@ -166,10 +166,10 @@ namespace ecomerce.Controllers
             var userId = _userService.GetUserId();
 
             var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
-            var cartItem = _context.CartItems.Where(s => s.tblCartId == cart.CartId).ToList();
+            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).ToList();
             if (cartItem != null)
             {
-                var product = cartItem.FirstOrDefault(c => c.TblProductProductId == id &&  c.tblCartId == cart.CartId);
+                var product = cartItem.FirstOrDefault(c => c.TblProductProductId == id &&  c.userId == cart.MemberId);
                 if (product != null)
                 {
                     _context.CartItems.Remove(product);
@@ -182,7 +182,7 @@ namespace ecomerce.Controllers
         {
             var userId = _userService.GetUserId();
             var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
-            var cartItem = _context.CartItems.Where(s => s.tblCartId == cart.CartId).Include(c=>c.TblProduct).ToList();
+            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).Include(c=>c.TblProduct).ToList();
             if (cartItem == null)
             {
                 cartItem = new List<CartItems>();

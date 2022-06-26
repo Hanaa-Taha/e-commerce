@@ -10,11 +10,11 @@ namespace ecomerce.Model
         public string userId { get; set; }
         public int ProductId { get; set; }
         
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
 
         
-        public virtual TblProduct Product { get; set; }
-        public virtual AppUser User { get; set; }
+        
+
 
     }
 }

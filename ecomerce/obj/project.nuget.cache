@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k4s44rp75TqjVHlrTT7O9ZKLgDJJqgAOObGKAs2nKTY+qiRktgxfHn3KA0r6uZceFYqikCUXktxS6Als5k8VlA==",
+  "dgSpecHash": "0TAcUKbcVHCB5t822TXz5ShtN2+IfN/WApFxl67TmWx8rsBxSFUVullAUUkVDRELB8yJtnRoNCqEpn25n+RV3A==",
   "success": true,
-  "projectFilePath": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj",
+  "projectFilePath": "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\ecomerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\abp\\5.14.0\\abp.5.14.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\abp.automapper\\5.14.0\\abp.automapper.5.14.0.nupkg.sha512",

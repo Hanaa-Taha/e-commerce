@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ecomerce.Model;
 
 namespace ecomerce.Migrations
 {
     [DbContext(typeof(dbSmartAgricultureContext))]
-    partial class dbSmartAgricultureContextModelSnapshot : ModelSnapshot
+    [Migration("20220625232412_newCartItems")]
+    partial class newCartItems
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -237,17 +239,19 @@ namespace ecomerce.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("TblProductProductId")
-                        .HasColumnType("int");
-
                     b.Property<string>("userId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("TblProductProductId")
+                        .HasColumnType("int");
+
+                    
+
                     b.HasKey("cartItemsId");
 
-                    b.HasIndex("TblProductProductId");
-
                     b.HasIndex("userId");
+
+                    b.HasIndex("TblProductProductId");
 
                     b.ToTable("CartItems");
                 });
@@ -716,15 +720,15 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("ecomerce.Model.CartItems", b =>
                 {
+                    b.HasOne("ecomerce.Model.TblCart", "TblCart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("userId");
+
                     b.HasOne("ecomerce.Model.TblProduct", "TblProduct")
                         .WithMany("CartItems")
                         .HasForeignKey("TblProductProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("ecomerce.Model.TblCart", "TblCart")
-                        .WithMany("CartItems")
-                        .HasForeignKey("userId");
 
                     b.Navigation("TblCart");
 

@@ -39,7 +39,7 @@ namespace ecomerce.Model
                 //optionsBuilder.UseSqlServer("Server=DESKTOP-EQKKVG6\\SQLSERVERTWO;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
                 //optionsBuilder.UseSqlServer("Server=SQL8002.site4now.net;Database=db_a88f3c_newweb19992022;User Id=db_a88f3c_newweb19992022_admin;Password=@Aa123456789;Trusted_Connection=false;");
                 
-                //optionsBuilder.UseSqlServer("Server=SQL5103.site4now.net;Database=db_a84349_teamweb2022;User Id=db_a84349_teamweb2022_admin;Password=@Aa123456789;Trusted_Connection=false;");
+                
                 optionsBuilder.UseSqlServer("Server=DESKTOP-B0KDJC5\\SQLEXPRESS;Database=dbSmartArgti;Trusted_Connection=True;MultipleActiveResultSets=true");
             }
         }
@@ -49,7 +49,7 @@ namespace ecomerce.Model
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<TblCart>(entity =>
             {
-                entity.HasKey(e => e.CartId)
+                entity.HasKey(e => e.MemberId)
                     .HasName("PK__Tbl_Cart__51BCD7B7F7E8BC66");
 
                 entity.ToTable("Tbl_Cart");

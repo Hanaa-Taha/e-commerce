@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj": {}
+    "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\ecomerce.csproj": {}
   },
   "projects": {
-    "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj": {
+    "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\ecomerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj",
+        "projectUniqueName": "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\ecomerce.csproj",
         "projectName": "ecomerce",
-        "projectPath": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\ecomerce.csproj",
+        "projectPath": "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\ecomerce.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\graduationProject\\working on now\\e-commerce-headers\\ecomerce\\obj\\",
+        "outputPath": "D:\\graduationProject\\working on now\\e-commerce_editCartItems\\ecomerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",

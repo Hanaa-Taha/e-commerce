@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\DELL\Desktop\azureNew</_PublishTargetUrl>
-    <History>True|2022-06-24T01:29:22.3081974Z;True|2022-05-16T05:15:13.8146222+02:00;True|2022-04-25T14:25:41.4695563+02:00;True|2022-04-25T14:23:44.4070192+02:00;True|2022-03-28T23:26:56.6379960+02:00;</History>
+    <History>True|2022-06-26T02:16:05.6482416Z;True|2022-06-24T03:29:22.3081974+02:00;True|2022-05-16T05:15:13.8146222+02:00;True|2022-04-25T14:25:41.4695563+02:00;True|2022-04-25T14:23:44.4070192+02:00;True|2022-03-28T23:26:56.6379960+02:00;</History>
   </PropertyGroup>
 </Project>
