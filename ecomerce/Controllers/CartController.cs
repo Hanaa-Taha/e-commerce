@@ -19,8 +19,10 @@ namespace ecomerce.Controllers
         private readonly dbSmartAgricultureContext _context;
         private readonly IWebHostEnvironment _webHostEnviroment;
         private readonly IUserService _userService;
+        public class emptyStr {}
+        emptyStr emptyString = new emptyStr { };
 
-        public CartController(dbSmartAgricultureContext context, IWebHostEnvironment webHostEnviroment, IUserService userService)
+            public CartController(dbSmartAgricultureContext context, IWebHostEnvironment webHostEnviroment, IUserService userService)
         {
             _context = context;
             _webHostEnviroment = webHostEnviroment;
@@ -85,15 +87,16 @@ namespace ecomerce.Controllers
         public async Task<ActionResult<CartItems>> PostTblCart(CartModel cartModel)
         {
 
-            
 
+
+           
             
             var oldtblCart = await _context.CartItems.SingleOrDefaultAsync(s => s.userId == cartModel.userId && s.TblProductProductId == cartModel.ProductId);
             if (oldtblCart != null)
             {
                 oldtblCart.Quantity = oldtblCart.Quantity + 1;
                 await _context.SaveChangesAsync();
-                return Ok();
+                return Ok(emptyString);
             }
             else
             {
@@ -118,7 +121,7 @@ namespace ecomerce.Controllers
                 cart.ApplyTo(tblCart);
                 await _context.SaveChangesAsync();
             }
-            return Ok();
+            return Ok(emptyString);
         }
 
         // DELETE: api/TblCarts/5
@@ -134,7 +137,7 @@ namespace ecomerce.Controllers
             _context.CartItems.Remove(tblCart);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok(emptyString);
         }
 
         [HttpDelete("DeleteAllTblCart/{userId}")]
@@ -153,7 +156,7 @@ namespace ecomerce.Controllers
             
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok(emptyString);
         }
 
 

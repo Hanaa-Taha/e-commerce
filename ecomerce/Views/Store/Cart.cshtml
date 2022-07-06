@@ -70,111 +70,203 @@
     </div>*@
 
 
+@if (Model.Count() != 0)
+{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>farmer house-cart page</title>
+        <script src="https://kit.fontawesome.com/64d58efce2.js"
+                crossorigin="anonymous"></script>
 
+        <!--      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        -->
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- custom css file link  -->
+
+
+        <link href="~/css/testStore.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- header section starts  -->
+
+        <partial name="_header" />
+
+        <!-- header section ends -->
+        <!--head part-->
+
+        <div class="head cart-head">
+            <h1>سلة المشتريات</h1>
+        </div>
+
+        <!--cart-page starts-->
+        <section class="cart-page">
+
+            <div class="box-container">
+                <div class="cart-content">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>الصورة</th>
+                                <th>الاسم</th>
+                                <th>الكمية</th>
+                                <th>السعر</th>
+                                <th>نوع المنتج</th>
+                                <th>اللون</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+
+
+
+
+
+
+
+                                    <td>
+                                        @if (@item.TblProduct.ProductImage != null)
+                                        {
+                                            <img src="@item.TblProduct.ProductImage" width="200px" height="150px" />
+                                        }
+
+                                    </td>
+                                    <td>@item.TblProduct.ProductName</td>
+                                    <td>
+                                        <input type="number" class="quantity" value="@item.Quantity" id="quantity" min="1" max="10">
+                                    </td>
+                                    <td>@item.TblProduct.Price</td>
+                                    <td>@item.TblProduct.Category.CategoryName</td>
+                                    <td>@item.TblProduct.Description</td>
+                                    <td>
+                                        <a asp-action="Remove" asp-route-id="@item.TblProductProductId" class="btn btn-danger">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+            </div>
+            <div class="check-out">
+                <div class="back-btn">
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-success ">الرجوع إلي الصفحة الرئيسية</a>
+                </div>
+                <div class="total">
+                    <div class="back-btn "><a asp-action="Index" asp-controller="Checkout" class="btn btn-info">اضغط للدفع </a></div>
+                    <h3 class=" item-1">السعر الكلي : @Model.Sum(c => (c.TblProduct.Price * c.Quantity))</h3>
+                    <h3 class="item-2">الكمية الكلية :@Model.Sum(c => (c.Quantity)) </h3>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--cart-page ends-->
+        <!-- footer section starts  -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>روابط سريعة</h3>
+                    <a href="home.html"> <i class="fas fa-tractor"></i> الصفحة الرئيسية </a>
+                    <a href="shop.html"> <i class="fas fa-tractor"></i> المتجر</a>
+                    <a href="features.html"> <i class="fas fa-tractor"></i> المميزات</a>
+                    <a href="about.html"> <i class="fas fa-tractor"></i> معلومات عنا</a>
+                    <a href="review.html"> <i class="fas fa-tractor"></i>المراجعات</a>
+                    <a href="blog.html"> <i class="fas fa-tractor"></i> المقالات</a>
+                    <a href="contact.html"> <i class="fas fa-tractor"></i>  اتصل بنا</a>
+                </div>
+
+                <div class="box">
+                    <h3>روابط إضافية</h3>
+                    <a href="#"> <i class="fas fa-tractor"></i> طلبي</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+
+};
+
+
+@if (Model.Count() == 0){
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>farmer house-cart page</title>
+    <title>farmer house - empty cart</title>
     <script src="https://kit.fontawesome.com/64d58efce2.js"
             crossorigin="anonymous"></script>
 
-    <!--      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    -->
-
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!-- custom css file link  -->
 
-
-    <link href="~/css/testStore.css" rel="stylesheet" />
+    <!--css file link  -->
+    <link rel="stylesheet" href="~/css/testStore.css">
 
 </head>
 <body>
 
     <!-- header section starts  -->
 
+
     <partial name="_header" />
-
     <!-- header section ends -->
-    <!--head part-->
 
-    <div class="head cart-head">
-        <h1>سلة المشتريات</h1>
-    </div>
-
-    <!--cart-page starts-->
-    <section class="cart-page">
-
-        <div class="box-container">
-            <div class="cart-content">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>الصورة</th>
-                            <th>الاسم</th>
-                            <th>الكمية</th>
-                            <th>السعر</th>
-                            <th>نوع المنتج</th>
-                            <th>اللون</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                        <tr>
-
-
-
-
-                       
-
-
-                            <td>
-                                @if (@item.TblProduct.ProductImage != null)
-                                {
-                                <img src="@item.TblProduct.ProductImage" width="200px" height="150px" />
-                                }
-                                
-                            </td>
-                            <td>@item.TblProduct.ProductName</td>
-                            <td>
-                                <input type="number" class="quantity" value="@item.TblProduct.Quantity" id="quantity" min="1" max="10">
-                            </td>
-                            <td>@item.TblProduct.Price</td>
-                            <td>@item.TblProduct.Category.CategoryName</td>
-                            <td>@item.TblProduct.Description</td>
-                            <td>
-                                <a asp-action="Remove" asp-route-id="@item.TblProductProductId" class="btn btn-danger">
-                                    <i class="fas fa-trash-alt"></i>
-                                </a>
-                            </td>
-                        </tr>
-}
-                        </tbody>
-                </table>
-
-
-            </div>
+    <section class="wait">
+        <div class="image">
+            <img src="~/lib/Images/Empty-cuate.png" class="image" alt="" />
+        </div>
+        <div class="thanks">
+            <h2>
+                سلة مشترياتك فارغة
+            </h2>
+            <a asp-action="Index" class="btn">أذهب للمتجر </a>
 
         </div>
-        <div class="check-out">
-            <div class="back-btn">
-                <a asp-action="Index" asp-controller="Home" class="btn btn-success ">الرجوع إلي الصفحة الرئيسية</a>
-            </div>
-            <div class="total">
-                <div class="back-btn "><a asp-action="Index" asp-controller="Checkout" class="btn btn-info">اضغط للدفع </a></div>
-                <h3 class=" item-1">السعر الكلي : @Model.Sum(c => (c.TblProduct.Price * c.TblProduct.Quantity))</h3>
-                <h3 class="item-2">الكمية الكلية :@Model.Sum(c => (c.TblProduct.Quantity)) </h3>
 
-            </div>
-        </div>
 
     </section>
 
-    <!--cart-page ends-->
+
     <!-- footer section starts  -->
 
     <section class="footer">
@@ -195,29 +287,29 @@
             <div class="box">
                 <h3>روابط إضافية</h3>
                 <a href="#"> <i class="fas fa-tractor"></i> طلبي</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <a href="#"> <i class="fas fa-tractor"></i> حسابي </a>
+                <a href="#"> <i class="fas fa-tractor"></i> المفضلة </a>
+                <a href="#"> <i class="fas fa-tractor"></i> farmer friend تطبيق </a>
+                <a href="#"> <i class="fas fa-tractor"></i> farmer club تطبيق </a>
+                <a href="#"> <i class="fas fa-tractor"></i>فريقنا  </a>
             </div>
-        </div>
+
+            <div class="box">
+                <h3>تابعنا</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+
     </section>
+
+    
+
+    <!-- js file link  -->
+    <script src="~/js/testStore.js"></script>
 </body>
 </html>
+}
+

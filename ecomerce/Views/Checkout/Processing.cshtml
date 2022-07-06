@@ -22,7 +22,7 @@
     <br /><br /><br /><br /><br /><br /><br />
     <div class="text-center ">
         <form asp-action="Processing" asp-controller="Checkout" method="post">
-
+            <img src="~/lib/Images/Confirmed-cuate" class="image" alt="" />
             <label class="text-info">تمت عملية الدفع بنجاح </label>
 
             <br />
@@ -41,11 +41,11 @@
 
 
             @*@if (TempData.Peek("TotalAmount") != null)
-                {
-                    var result = Convert.ToInt64(TempData.Peek("TotalAmount"));
-                    result /= 100;
-                    <h3>Amount: @result USD has been processed successfully.</h3>
-                }*@
+        {
+            var result = Convert.ToInt64(TempData.Peek("TotalAmount"));
+            result /= 100;
+            <h3>Amount: @result USD has been processed successfully.</h3>
+        }*@
         </form>
     </div>
 </body>

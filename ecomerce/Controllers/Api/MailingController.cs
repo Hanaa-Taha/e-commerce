@@ -14,7 +14,8 @@ namespace ecomerce.Controllers
     public class MailingController : ControllerBase
     {
         private readonly IMailingService _mailingService;
-
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
         public MailingController(IMailingService mailingService)
         {
             _mailingService = mailingService;
@@ -24,7 +25,7 @@ namespace ecomerce.Controllers
         public async Task<IActionResult> SendMail([FromBody] MailRequestDto dto)
         {
             await _mailingService.SendEmailAsync("agrigradproject2022@gmail.com", dto.Subject, dto.Body);
-            return Ok();
+            return Ok(emptyString);
         }
     }
 }

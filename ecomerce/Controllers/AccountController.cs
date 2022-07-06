@@ -36,7 +36,8 @@ namespace ecomerce.Controllers
         private readonly SignInManager<AppUser> signInManager;
         private readonly IConfiguration _configuration;
         private readonly dbSmartAgricultureContext databaseContext;
-       
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
 
         public AccountController(UserManager<AppUser> userManager
             , RoleManager<IdentityRole> roleManager
@@ -73,6 +74,12 @@ namespace ecomerce.Controllers
 
             // Get Identity User details user user manager
             var user = await userManager.FindByEmailAsync(email);
+            
+
+            if (user == null)
+            {
+                return BadRequest(new Message { message = "The email is invalid" });
+            }
 
             // Generate password reset token
             var token = await userManager.GeneratePasswordResetTokenAsync(user);
@@ -120,12 +127,21 @@ namespace ecomerce.Controllers
             // Get Identity User details user user manager
             var user = await userManager.FindByEmailAsync(email);
 
+            if (user==null)
+            {
+                return BadRequest(new Message { message = "The email is invalid" });
+            }
+
             // getting token from otp
             var resetPasswordDetails = await databaseContext.ResetPasswords
                 .Where(rp => rp.OTP == otp && rp.UserId == user.Id)
                 .OrderByDescending(rp => rp.InsertDateTimeUTC)
                 .FirstOrDefaultAsync();
 
+            if (resetPasswordDetails==null)
+            {
+                return BadRequest(new Message { message = "OTP is Incorrect" });
+            }
             // Verify if token is older than 15 minutes
             var expirationDateTimeUtc = resetPasswordDetails.InsertDateTimeUTC.AddMinutes(15);
 
@@ -138,10 +154,10 @@ namespace ecomerce.Controllers
 
             if (!res.Succeeded)
             {
-                return BadRequest();
+                return BadRequest(new Message { message = "Verify the entered data and try again" });
             }
 
-            return Ok();
+            return Ok(new Message { message = "The password has been changed successfully" });
         }
     }
 }

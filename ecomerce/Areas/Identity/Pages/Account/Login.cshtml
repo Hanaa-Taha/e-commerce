@@ -11,7 +11,13 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/login_proStore.css" />
-    @*<title>Sign in & Sign up Form</title>*@
+    <style>
+        .brr {
+            display: block;
+            margin-top: 15px;
+            content: "";
+        }
+    </style>
 </head>
 <body>
         @*<h1>@ViewData["Title"]</h1>
@@ -102,9 +108,9 @@
                     <h2 class="title">تسجيل الدخول</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        @*<input type="text" placeholder="اسم المستخدم" id="login_user" />*@
-                    <div @*class="form-group"*@>
-                        <div></div>
+                        
+                    <div >
+                        <br class="brr" />
                         <label >البريد الإلكتروني</label>
                         <input asp-for="Input.Email" class="form-control" id="login_user" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
@@ -112,9 +118,9 @@
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        @*<input type="password" placeholder="الرقم السري" id="login_password" />*@
-                    <div @*class="form-group"*@>
-                        
+                       
+                    <div >
+                        <br class="brr" />
                         <label >الرمز السري</label>
                         <input asp-for="Input.Password" class="form-control" id="login_password" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>

@@ -4906,7 +4906,6 @@ D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Releas
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Home\SendMail.cshtml.g.cs
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Roles\Index.cshtml.g.cs
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Roles\_RoleForm.cshtml.g.cs
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
@@ -4948,3 +4947,5 @@ D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Releas
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\ref\ecomerce.dll
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\ecomerce.pdb
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\ecomerce.genruntimeconfig.cache
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\Dashboard\IOTRegistration.cshtml.g.cs
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\Razor\Views\TblProducts\Orders.cshtml.g.cs

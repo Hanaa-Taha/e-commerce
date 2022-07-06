@@ -10,7 +10,7 @@ namespace ecomerce.Services
         public static async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {
             string fromMail = "testwebproject.22@gmail.com";
-            string fromPassword = "@ManarHanaa2022";
+            string fromPassword = "eumubwvbrebtdode";
 
             MailMessage message = new MailMessage();
             message.From = new MailAddress(fromMail);

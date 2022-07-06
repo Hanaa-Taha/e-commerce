@@ -7,7 +7,7 @@ namespace ecomerce.Model
 {
     public class checkInfoWithCart
     {
-        public List<TblCart> carts { get; set; }
+        public List<CartItems> carts { get; set; }
         public CheckoutInfo checkoutInfo { get; set; }
     }
 }

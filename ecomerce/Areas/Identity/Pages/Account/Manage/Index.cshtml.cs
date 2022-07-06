@@ -25,6 +25,8 @@ namespace ecomerce.Areas.Identity.Pages.Account.Manage
 
         public string Username { get; set; }
 
+        
+
         [TempData]
         public string StatusMessage { get; set; }
 
@@ -36,18 +38,37 @@ namespace ecomerce.Areas.Identity.Pages.Account.Manage
             [Phone]
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
+            [Display(Name = "Firs Name")]
+            public string FirstName { get; set; }
+
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+            [EmailAddress]
+            [Display(Name = "Email")]
+            public string Email { get; set; }
+
+
+
         }
 
         private async Task LoadAsync(AppUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
+            var Email = await _userManager.GetEmailAsync(user);
+            
 
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Email=Email,
+                FirstName=user.firstName,
+                LastName=user.lastName
+
+
+
             };
         }
 

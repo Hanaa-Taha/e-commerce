@@ -21,7 +21,8 @@ namespace ecomerce.Controllers
         private readonly dbSmartAgricultureContext _context;
         private readonly IWebHostEnvironment _webHostEnviroment;
         private readonly UserManager<AppUser> _userManager;
-
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
         public ImageUploadController(UserManager<AppUser> userManager, dbSmartAgricultureContext context, IWebHostEnvironment webHostEnviroment)
         {
             _context = context;
@@ -62,7 +63,7 @@ namespace ecomerce.Controllers
                 string serverFolder = Path.Combine(_webHostEnviroment.WebRootPath, folder);
                 await profilePic.file.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
                 await _context.SaveChangesAsync();
-                return Ok();
+                return Ok(emptyString);
             }
             catch (Exception ex)
             {
@@ -94,7 +95,7 @@ namespace ecomerce.Controllers
 
                 result.profileImage = null;
                 await _context.SaveChangesAsync();
-                return Ok();
+                return Ok(emptyString);
             }
 
             return NotFound();

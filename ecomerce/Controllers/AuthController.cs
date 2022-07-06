@@ -26,6 +26,8 @@ namespace ecomerce.Controllers
         private readonly IAuthService _authService;
         private readonly dbSmartAgricultureContext _context;
         private readonly UserManager<AppUser> _userManager;
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
         public AuthController(UserManager<AppUser> userManager, IAuthService authService, dbSmartAgricultureContext context)
         {
             _authService = authService;
@@ -85,7 +87,7 @@ namespace ecomerce.Controllers
 
             }
 
-            return Ok();
+            return Ok(emptyString);
         }
 
 

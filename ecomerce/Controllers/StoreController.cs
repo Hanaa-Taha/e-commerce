@@ -101,7 +101,7 @@ namespace ecomerce.Controllers
         }
         [HttpPost]
         [ActionName("Detail")]
-        public async Task<ActionResult> ProductDetail(int? id)
+        public async Task<ActionResult> ProductDetail(int id)
         {
 
             if (id == null)
@@ -116,26 +116,19 @@ namespace ecomerce.Controllers
             }
 
             var oldtblCart = await _context.TblCart.SingleOrDefaultAsync(s => s.MemberId == userId );
-            if (oldtblCart != null)
-            {
-                //oldtblCart.Quantity = oldtblCart.Quantity + 1;
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            else
-            { 
-                var TblCart = new TblCart
-                {
-                    //ProductId = product.ProductId,
-                    MemberId = userId,
-                    //Quantity=1
-                };
-                _context.TblCart.Add(TblCart);
+            var cartItems = new CartItems{
+
+                TblProductProductId = id,
+                userId = userId,
+                Quantity = 1
+
+            };
+                _context.CartItems.Add(cartItems);
 
                 _context.SaveChanges();
 
                 return RedirectToAction(nameof(Index));
-            }
+            
 
                 
         }
@@ -182,7 +175,7 @@ namespace ecomerce.Controllers
         {
             var userId = _userService.GetUserId();
             var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
-            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).Include(c=>c.TblProduct).ToList();
+            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).Include(c=>c.TblProduct).Include(c => c.TblProduct.Category).ToList();
             if (cartItem == null)
             {
                 cartItem = new List<CartItems>();

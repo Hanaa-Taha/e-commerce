@@ -15,7 +15,8 @@ namespace ecomerce.Controllers
     public class CheckoutAPIController : ControllerBase
     {
 
-        
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
         private readonly dbSmartAgricultureContext _context;
         public CheckoutAPIController(dbSmartAgricultureContext context)
         {
@@ -34,7 +35,7 @@ namespace ecomerce.Controllers
             {
 
                 MemberId = model.MemberId,
-                amount = model.amount,
+                
                 phone = model.phone,
                 city = model.city,
                 street = model.street,
@@ -116,7 +117,7 @@ namespace ecomerce.Controllers
             {
                 oldOrderItems.Quantity = oldOrderItems.Quantity + 1;
                 await _context.SaveChangesAsync();
-                return Ok();
+                return Ok(emptyString);
             }
             else
             {
@@ -163,7 +164,7 @@ namespace ecomerce.Controllers
             _context.Order_items.Remove(orderItems);
             await _context.SaveChangesAsync();
 
-            return Ok();
+            return Ok(emptyString);
         }
 
 
@@ -176,7 +177,7 @@ namespace ecomerce.Controllers
                 OrderDetails.ApplyTo(orderDetails);
                 await _context.SaveChangesAsync();
             }
-            return Ok();
+            return Ok(emptyString);
         }
 
         [HttpPatch("PatchInformation/{CheckoutInformationId}")]
@@ -188,7 +189,7 @@ namespace ecomerce.Controllers
                 CheckoutInfo.ApplyTo(checkoutInformation);
                 await _context.SaveChangesAsync();
             }
-            return Ok();
+            return Ok(emptyString);
         }
 
 
@@ -306,7 +307,7 @@ namespace ecomerce.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(emptyString);
 
             //}
         }

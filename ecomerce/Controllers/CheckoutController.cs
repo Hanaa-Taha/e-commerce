@@ -28,7 +28,7 @@ namespace ecomerce.Controllers
         {
             var userId = _userService.GetUserId();
 
-            var cart = _context.TblCart.Where(s => s.MemberId == userId).ToList();
+            var cart = _context.CartItems.Where(s => s.userId == userId).Include(s => s.TblProduct).ToList();
 
             checkInfoWithCart checkInfoWithCart = new checkInfoWithCart { carts = cart  };
 
@@ -44,8 +44,8 @@ namespace ecomerce.Controllers
 
 
 
-
-            //ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item =>( item.Product.Price * item.Product.Quantity));
+            
+            ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item => (item.TblProduct.Price* item.Quantity));
             ViewBag.total = Math.Round(ViewBag.DollarAmount, 2) * 100;
             ViewBag.total = Convert.ToInt64(ViewBag.total);
             long total = ViewBag.total;

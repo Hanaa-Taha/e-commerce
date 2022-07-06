@@ -328,7 +328,7 @@ label {
   display: inline-block;
 }
 
-button {
+/*button {
   border-radius: 0;
 }
 
@@ -354,7 +354,7 @@ select {
 
 [role=button] {
   cursor: pointer;
-}
+}*/
 
 select {
   word-wrap: normal;

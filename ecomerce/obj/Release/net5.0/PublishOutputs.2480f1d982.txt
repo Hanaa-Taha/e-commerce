@@ -117,9 +117,11 @@ D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Releas
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\ord.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\processing.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\style.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleAdminDashBoard.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleDashboard.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\styleHome.css
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\tblProductsStyle.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\css\testStore.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\loginStore.js
@@ -129,6 +131,7 @@ D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Releas
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\registerStore.js
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\scriptStore.js
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\tblProductsmain.js
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\js\testStore.js
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -259,6 +262,7 @@ D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Releas
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\undraw_my_password_d6kg.png
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\New folder\zucchini.jpg
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\onion.png
+D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\Online shopping-bro.png
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\pablo-836.png
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (1).png
 D:\graduationProject\working on now\e-commerce_editCartItems\ecomerce\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\Images\product (10).png

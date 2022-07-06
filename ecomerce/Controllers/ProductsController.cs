@@ -23,7 +23,8 @@ namespace ecomerce.Controllers
     {
         private readonly dbSmartAgricultureContext _context;
         private readonly IMapper _mapper;
-
+        public class emptyStr { }
+        emptyStr emptyString = new emptyStr { };
         public ProductsController(dbSmartAgricultureContext context, IMapper mapper)
         {
             _context = context;

@@ -12,7 +12,13 @@
     <script src="https://kit.fontawesome.com/64d58efce2.js"
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/login_proStore.css" />
-    @*<title>Sign in & Sign up Form</title>*@
+    <style>
+        .brr {
+            display: block;
+            margin-top: 15px;
+            content: "";
+        }
+    </style>
 </head>
 <body>
 
@@ -191,14 +197,16 @@
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <div>
-                            <label>الإسم الأول</label>
-                            <input asp-for="Input.FirstName" class="form-control" id="register_user" />
-                            <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                            <br class="brr"  />
+                             <label>الإسم الأول</label>
+                             <input asp-for="Input.FirstName" class="form-control" id="register_user" />
+                             <span asp-validation-for="Input.FirstName" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <div>
+                            <br class="brr" />
                             <label>الإسم الأخير</label>
                             <input asp-for="Input.LastName" class="form-control" id="register_user" />
                             <span asp-validation-for="Input.LastName" class="text-danger"></span>
@@ -207,6 +215,7 @@
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
                         <div>
+                            <br class="brr" />
                             <label>البريد الإلكتروني</label>
                             <input asp-for="Input.Email" class="form-control" id="email" />
                             <span asp-validation-for="Input.Email" class="text-danger"></span>
@@ -215,6 +224,7 @@
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <div>
+                            <br class="brr" />
                             <label>الرمز السري</label>
                             <input asp-for="Input.Password" class="form-control" />
                             <span asp-validation-for="Input.Password" class="text-danger" id="register_password"></span>
@@ -223,6 +233,7 @@
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
                         <div>
+                            <br class="brr" />
                             <label>تأكيد الرمز السري</label>
                             <input asp-for="Input.ConfirmPassword" class="form-control" />
                             <span asp-validation-for="Input.ConfirmPassword" class="text-danger" id="register_password"></span>

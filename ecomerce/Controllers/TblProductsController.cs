@@ -217,5 +217,15 @@ namespace ecomerce.Controllers
         {
             return _context.TblProduct.Any(e => e.ProductId == id);
         }
+
+        public async Task<IActionResult> Orders()
+        {
+
+            var userId = _userService.GetUserId();
+            var isLoggedIn = _userService.IsAuthenticated();
+            var dbSmartAgricultureContext = _context.Order_items.Include(t => t.OrderDetails).Include(t => t.OrderDetails.checkoutInfo).Include(x => x.TblProduct).Include(x => x.TblProduct.Category).Include(x => x.OrderDetails.checkoutInfo.Member).Where(s => s.TblProduct.VendorId == userId);
+            return View(await dbSmartAgricultureContext.ToListAsync());
+        }
+
     }
 }

@@ -12,6 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\wave.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\Dashboard\Index.cshtml~RF6ce7b3.TMP" />
   </ItemGroup>
 
@@ -19,6 +23,7 @@
     <None Include="Views\Roles\Index.cshtml" />
     <None Include="Views\Roles\_RoleForm.cshtml" />
     <None Include="wwwroot\css\styleHome.css" />
+    <None Include="wwwroot\css\wave.png" />
     <None Include="wwwroot\js\mainHome.js" />
     <None Include="wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
     <None Include="wwwroot\lib\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />

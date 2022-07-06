@@ -29,11 +29,54 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <style>
+        .button-52 {
+            font-size: 16px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            padding: 13px 20px 13px;
+            outline: 0;
+            border: 1px solid #2c4964;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            color: #fff;
+            border-radius: 3px;
+        }
 
+        .button-52:after {
+             content: "";
+             background-color: #57AC3F;
+             width: 100%;
+             z-index: -1;
+             position: absolute;
+             height: 100%;
+             top: 7px;
+             left: 7px;
+             transition: 0.2s;
+             border-radius: 3px;
+         }
+
+        .button-52:hover:after {
+            top: 0px;
+            left: 0px;
+        }
+        @@media (min-width: 768px) {
+        .button-52 {
+            padding: 13px 50px 13px;
+        }
+}
+
+
+    </style>
     <!-- =======================================================
     * Template Name: Techie - v4.7.0
     * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
@@ -150,7 +193,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/svg2.png" class="img-fluid" alt="">
+                        <img src="~/lib/Images/Smart home-pana.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>اجعل مزرعتك ذكية</h3>
@@ -158,8 +201,8 @@
                             يمكنك الزراعة من المنزل وتسجيل الدخول للاستمتاع بالكثير من المزايا
                         </p>
 
-                        
-                        <button style="background: #57AC3F; color: white; border-color: white " >التسجيل</button>
+                        <button class="button-52" role="button" onclick="location.href='/Dashboard/IOTRegistration'"> التسجيل في نظام الزراعة الذكية</button>
+                        @*<button style="background: #57AC3F; color: white; border-color: white " >التسجيل</button>*@
                     </div>
                 </div>
                 <div class="row">
@@ -171,8 +214,8 @@
                         <p class="fst-italic">
                             استمتع بالتسوق من خلال موقعنا
                         </p>
-                        <button onclick="location.href='/store'" style="background: #57AC3F; color: white; border-color: white ">الذهاب للمتجر</button>
-                        @*<button onclick="location.href='/store'" type="button">Store</button>*@
+                        @*<button onclick="location.href='/store'" style="background: #57AC3F; color: white; border-color: white ">الذهاب للمتجر</button>*@
+                        <button class="button-52" role="button" onclick="location.href='/store'">الذهاب للمتجر</button>
                     </div>
                 </div>
                 @*<div class="iotImag">
@@ -673,7 +716,7 @@
                           <div class="error-message"></div>
                           <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div> -->
-                        <div class="text-center"><button style="background: #57AC3F;" class="send btn" onclick="sendMessage()">أرسل</button></div>
+                        <div class="text-center"><br><button style="background: #57AC3F; color: white;" class="send btn" onclick="sendMessage()">أرسل</button></div>
 
                     </div>
 
