@@ -112,8 +112,10 @@
                                             <label for="inputEmail4" class="control-label">فئة المنتج</label>
                                             <select class="form-control" asp-for="CategoryName" asp-items="ViewBag.CategoryName"></select>
                                         </div>
-
-                                        <input asp-for="check" type="checkbox" id="myCheck" onclick="myFunction()">
+                                        <div class="form-group">
+                                            <label for="Evaluate Budget" class="control-label">هل ترغب في إضافة خصم على المنتج؟</label>
+                                            <input asp-for="check" type="checkbox" id="myCheck" onclick="myFunction()">
+                                        </div>
 
                                         
 
@@ -168,13 +170,13 @@
                                         </div>
                                         <div class="mb-2 mt-4">
                                             <div class="text-right">
-                                                <input @*style="background-color:#42ba96"*@ type="submit" value="إضافة" class="btn btn-outline-success" />
+                                                <input  type="submit" value="إضافة" class="btn btn-outline-success" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <a asp-action="Index">Back to List</a>
+                                    <h3><a asp-action="Index">العوده إلى قائمة المنتجات</a></h3>
                                 </div>
                             </div>
                         </div>

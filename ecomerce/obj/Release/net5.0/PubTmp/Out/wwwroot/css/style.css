@@ -363,19 +363,18 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.wave{
-  display: none;
-  position: absolute;
-  bottom: -1.5rem;
-  left: 0;
-  height: 7rem;
-  width: 200%;
-  background-image: url("wave.png");
- 
-  background-size: 100rem 11rem;
-  background-repeat: repeat-x;
-  animation: wave 10s linear infinite;
-  
+.wave {
+    display: none;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    height: 7rem;
+    width: 200%;
+    background-image: url("wave.png");
+    
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation: wave 10s linear infinite;
 }
 .wave2{
   animation-direction: reverse;

@@ -23,9 +23,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="~/css/styleDashboard.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
-        <script src="main.js"></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+        <script src="~/js/mainDashboard.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <style>
+            .btn-outline-primary {
+                border-color: #57ac3f;
+            }
+
+                .btn-outline-primary:hover {
+                    border-color: #3a290f;
+                }
+        </style>
     </head>
     <body>
         <partial name="_header" />
@@ -51,7 +60,7 @@
                 {
                 }*@
             <section class="main" id="main">
-                <div class="search">
+                @*<div class="search">
                     <div class="notifications">
                         <a href="#main"><span class="material-icons-outlined">dashboard</span></a>
                         <a href="#control"><span class="material-icons-outlined"> build </span></a>
@@ -63,7 +72,7 @@
 
                     </form>
 
-                </div>
+                </div>*@
                 <!-- <div class="title">
                   <h1>بياناتي</h1>
                    <form action="">

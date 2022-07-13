@@ -41,7 +41,8 @@
     <section class="product-page">
 
         <div class="box-container">
-            
+            <form asp-action="Detail" method="post" enctype="multipart/form-data">
+
                 <div class="image"><img src="@Model.ProductImage" width="100%" height="250px" style="border-radius: 5px;border: 1px solid #efefef" /></div>
 
                 <div class="content">
@@ -82,14 +83,14 @@
                         </p>
 
                     </div>
-                  
-                        <input type="submit" class="btn btn-info form-control " asp-action="/store/cart"  value="اضف الى العربة" />
-                    
+
+                    <input type="submit" class="btn btn-info form-control "  value="اضف الى العربة" />
+
 
                 </div>
 
-
-            </div>
+            </form>
+        </div>
 </section>
 
     <!--product page ends-->

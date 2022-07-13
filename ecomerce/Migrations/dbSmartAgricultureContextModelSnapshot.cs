@@ -237,17 +237,20 @@ namespace ecomerce.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<string>("TblCartMemberId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("TblProductProductId")
                         .HasColumnType("int");
 
                     b.Property<string>("userId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("cartItemsId");
 
-                    b.HasIndex("TblProductProductId");
+                    b.HasIndex("TblCartMemberId");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("TblProductProductId");
 
                     b.ToTable("CartItems");
                 });
@@ -262,9 +265,6 @@ namespace ecomerce.Migrations
                     b.Property<string>("MemberId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("amount")
-                        .HasColumnType("int");
-
                     b.Property<string>("city")
                         .HasColumnType("nvarchar(max)");
 
@@ -274,11 +274,11 @@ namespace ecomerce.Migrations
                     b.Property<string>("governorate")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("phone")
-                        .HasColumnType("bigint");
+                    b.Property<string>("phone")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("propertyNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("propertyNumber")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("specialMarque")
                         .HasColumnType("nvarchar(max)");
@@ -716,15 +716,15 @@ namespace ecomerce.Migrations
 
             modelBuilder.Entity("ecomerce.Model.CartItems", b =>
                 {
+                    b.HasOne("ecomerce.Model.TblCart", "TblCart")
+                        .WithMany("CartItems")
+                        .HasForeignKey("TblCartMemberId");
+
                     b.HasOne("ecomerce.Model.TblProduct", "TblProduct")
                         .WithMany("CartItems")
                         .HasForeignKey("TblProductProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("ecomerce.Model.TblCart", "TblCart")
-                        .WithMany("CartItems")
-                        .HasForeignKey("userId");
 
                     b.Navigation("TblCart");
 

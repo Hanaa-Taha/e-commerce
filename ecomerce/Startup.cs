@@ -133,12 +133,12 @@ namespace ecomerce
             app.UseDefaultFiles();
 
 
-            app.Use(async (context, next) => 
-            {   
-                context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
-                await next(); 
+            //app.Use(async (context, next) => 
+            //{   
+            //    context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+            //    await next(); 
             
-            });
+            //});
 
             app.UseStaticFiles();
 

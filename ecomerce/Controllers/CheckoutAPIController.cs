@@ -71,114 +71,114 @@ namespace ecomerce.Controllers
 
 
 
-        [HttpPost("OrderDetails")]
+        //[HttpPost("OrderDetails")]
 
-        public async Task<ActionResult<Order_details>> OrderDetails([FromBody] Order_details model)
-        {
-            if (!ModelState.IsValid) { return NotFound(); }
+        //public async Task<ActionResult<Order_details>> OrderDetails([FromBody] Order_details model)
+        //{
+        //    if (!ModelState.IsValid) { return NotFound(); }
 
-            var result = new Order_details
-            {
+        //    var result = new Order_details
+        //    {
 
-                checkoutInfoId = model.checkoutInfoId,
-                total = model.total,
-                PaymentspaymentDetailsId = model.PaymentspaymentDetailsId,
-                ModifiedDate = DateTime.UtcNow,
-                CreatedDate = DateTime.UtcNow
-            };
-            _context.Order_details.Add(result);
-            await _context.SaveChangesAsync();
-            return Ok(result.orderDetailsId);
-
-
-        }
+        //        checkoutInfoId = model.checkoutInfoId,
+        //        total = model.total,
+        //        PaymentspaymentDetailsId = model.PaymentspaymentDetailsId,
+        //        ModifiedDate = DateTime.UtcNow,
+        //        CreatedDate = DateTime.UtcNow
+        //    };
+        //    _context.Order_details.Add(result);
+        //    await _context.SaveChangesAsync();
+        //    return Ok(result.orderDetailsId);
 
 
-        [HttpGet("GetOrderDetails/{OrderDetailsid}")]
-        public async Task<ActionResult<Order_details>> GetOrderDetails(int OrderDetailsid)
-        {
-            var Order_details = await _context.Order_details.Include(s => s.checkoutInfo).Where(s => s.orderDetailsId == OrderDetailsid).FirstOrDefaultAsync();
+        //}
 
 
-            if (Order_details == null)
-            {
-                return NotFound();
-            }
-
-            return Order_details;
-        }
+        //[HttpGet("GetOrderDetails/{OrderDetailsid}")]
+        //public async Task<ActionResult<Order_details>> GetOrderDetails(int OrderDetailsid)
+        //{
+        //    var Order_details = await _context.Order_details.Include(s => s.checkoutInfo).Where(s => s.orderDetailsId == OrderDetailsid).FirstOrDefaultAsync();
 
 
-        [HttpPost("PostOrderItems")]
-        public async Task<ActionResult<Order_items>> PostOrderItems(Order_items model)
-        {
-            var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == model.orderDetailsId && s.productId == model.productId);
-            if (oldOrderItems != null)
-            {
-                oldOrderItems.Quantity = oldOrderItems.Quantity + 1;
-                await _context.SaveChangesAsync();
-                return Ok(emptyString);
-            }
-            else
-            {
-                Order_items orderItems = new Order_items
-                {
-                    productId = model.productId,
-                    orderDetailsId = model.orderDetailsId,
-                    Quantity = 1,
-                    ModifiedDate = DateTime.UtcNow,
-                    CreatedDate = DateTime.UtcNow
-                };
-                _context.Order_items.Add(orderItems);
+        //    if (Order_details == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-                await _context.SaveChangesAsync();
-
-                return Ok(orderItems);
-            }
-        }
-
-        [HttpGet("GetOrderItems/{orderDetailsId}")]
-        public async Task<ActionResult<IEnumerable<Order_items>>> GetOrderItems(int orderDetailsId)
-        {
-            var Order_items = await _context.Order_items.Include(s => s.TblProduct).Where(s => s.orderDetailsId == orderDetailsId).ToListAsync();
+        //    return Order_details;
+        //}
 
 
-            if (Order_items == null)
-            {
-                return NotFound();
-            }
+        //[HttpPost("PostOrderItems")]
+        //public async Task<ActionResult<Order_items>> PostOrderItems(Order_items model)
+        //{
+        //    var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == model.orderDetailsId && s.productId == model.productId);
+        //    if (oldOrderItems != null)
+        //    {
+        //        oldOrderItems.Quantity = oldOrderItems.Quantity + 1;
+        //        await _context.SaveChangesAsync();
+        //        return Ok(emptyString);
+        //    }
+        //    else
+        //    {
+        //        Order_items orderItems = new Order_items
+        //        {
+        //            productId = model.productId,
+        //            orderDetailsId = model.orderDetailsId,
+        //            Quantity = 1,
+        //            ModifiedDate = DateTime.UtcNow,
+        //            CreatedDate = DateTime.UtcNow
+        //        };
+        //        _context.Order_items.Add(orderItems);
 
-            return Order_items;
-        }
+        //        await _context.SaveChangesAsync();
+
+        //        return Ok(orderItems);
+        //    }
+        //}
+
+        //[HttpGet("GetOrderItems/{orderDetailsId}")]
+        //public async Task<ActionResult<IEnumerable<Order_items>>> GetOrderItems(int orderDetailsId)
+        //{
+        //    var Order_items = await _context.Order_items.Include(s => s.TblProduct).Where(s => s.orderDetailsId == orderDetailsId).ToListAsync();
 
 
-        [HttpDelete("DeleteOrderItems/{OrderItemsid}")]
-        public async Task<IActionResult> DeleteOrderItems(int OrderItemsid)
-        {
-            var orderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == OrderItemsid);
-            if (orderItems == null)
-            {
-                return NotFound();
-            }
+        //    if (Order_items == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            _context.Order_items.Remove(orderItems);
-            await _context.SaveChangesAsync();
-
-            return Ok(emptyString);
-        }
+        //    return Order_items;
+        //}
 
 
-        [HttpPatch("PatchOrderDetails/{OrderDetailsId}")]
-        public async Task<IActionResult> PatchOrderDetails([FromBody] JsonPatchDocument OrderDetails, [FromRoute] int OrderDetailsId)
-        {
-            var orderDetails = await _context.Order_details.FindAsync(OrderDetailsId);
-            if (orderDetails != null)
-            {
-                OrderDetails.ApplyTo(orderDetails);
-                await _context.SaveChangesAsync();
-            }
-            return Ok(emptyString);
-        }
+        //[HttpDelete("DeleteOrderItems/{OrderItemsid}")]
+        //public async Task<IActionResult> DeleteOrderItems(int OrderItemsid)
+        //{
+        //    var orderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == OrderItemsid);
+        //    if (orderItems == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    _context.Order_items.Remove(orderItems);
+        //    await _context.SaveChangesAsync();
+
+        //    return Ok(emptyString);
+        //}
+
+
+        //[HttpPatch("PatchOrderDetails/{OrderDetailsId}")]
+        //public async Task<IActionResult> PatchOrderDetails([FromBody] JsonPatchDocument OrderDetails, [FromRoute] int OrderDetailsId)
+        //{
+        //    var orderDetails = await _context.Order_details.FindAsync(OrderDetailsId);
+        //    if (orderDetails != null)
+        //    {
+        //        OrderDetails.ApplyTo(orderDetails);
+        //        await _context.SaveChangesAsync();
+        //    }
+        //    return Ok(emptyString);
+        //}
 
         [HttpPatch("PatchInformation/{CheckoutInformationId}")]
         public async Task<IActionResult> PatchInformation([FromBody] JsonPatchDocument CheckoutInfo, [FromRoute] int CheckoutInformationId)
@@ -194,48 +194,48 @@ namespace ecomerce.Controllers
 
 
 
-        [HttpGet("GetPaymentDetails/{paymentDetailsId}")]
-        public async Task<ActionResult<payment_details>> GetPaymentDetails(int paymentDetailsId)
-        {
-            var PaymentDetailsId = await _context.payment_details.Where(s => s.paymentDetailsId == paymentDetailsId).FirstOrDefaultAsync();
+        //[HttpGet("GetPaymentDetails/{paymentDetailsId}")]
+        //public async Task<ActionResult<payment_details>> GetPaymentDetails(int paymentDetailsId)
+        //{
+        //    var PaymentDetailsId = await _context.payment_details.Where(s => s.paymentDetailsId == paymentDetailsId).FirstOrDefaultAsync();
 
 
-            if (PaymentDetailsId == null)
-            {
-                return NotFound();
-            }
+        //    if (PaymentDetailsId == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return PaymentDetailsId;
-        }
-
-
-
+        //    return PaymentDetailsId;
+        //}
 
 
 
 
 
-        [HttpPost("PostPaymentDetails")]
-
-        public async Task<ActionResult<payment_details>> PostPaymentDetails([FromBody] payment_details model)
-        {
-            if (!ModelState.IsValid) { return NotFound(); }
-
-            var result = new payment_details
-            {
-
-                amount = model.amount,
-                provider = model.provider,
-                status = model.status,
-                ModifiedDate = DateTime.UtcNow,
-                CreatedDate = DateTime.UtcNow
-            };
-            _context.payment_details.Add(result);
-            await _context.SaveChangesAsync();
-            return Ok(result);
 
 
-        }
+
+        //[HttpPost("PostPaymentDetails")]
+
+        //public async Task<ActionResult<payment_details>> PostPaymentDetails([FromBody] payment_details model)
+        //{
+        //    if (!ModelState.IsValid) { return NotFound(); }
+
+        //    var result = new payment_details
+        //    {
+
+        //        amount = model.amount,
+        //        provider = model.provider,
+        //        status = model.status,
+        //        ModifiedDate = DateTime.UtcNow,
+        //        CreatedDate = DateTime.UtcNow
+        //    };
+        //    _context.payment_details.Add(result);
+        //    await _context.SaveChangesAsync();
+        //    return Ok(result);
+
+
+        //}
 
 
 

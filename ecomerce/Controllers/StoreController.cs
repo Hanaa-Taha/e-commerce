@@ -127,55 +127,49 @@ namespace ecomerce.Controllers
 
                 _context.SaveChanges();
 
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Shop));
             
 
                 
         }
         //GET Remove action methdo
         [ActionName("Remove")]
-        public IActionResult RemoveToCart(string? id)
+        public IActionResult Remove(int id)
         {
-            var userId = _userService.GetUserId();
 
-            var cart = _context.CartItems.Where(s => s.userId == userId).ToList();
-            if (cart != null)
+            var cartItem = _context.CartItems.Where(s => s.cartItemsId == id).FirstOrDefault();
+            if (cartItem != null)
             {
-                var product = cart.FirstOrDefault(c => c.userId == id);
-                if (product != null)
-                {
-                    _context.CartItems.Remove(product);
-                    _context.SaveChanges();
 
-                }
+                _context.CartItems.Remove(cartItem);
+                 _context.SaveChanges();
+
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Cart));
         }
 
         [HttpPost]
-
-        public IActionResult Remove(int? id)
+        [ActionName("Remove")]
+        public async Task<IActionResult> Remove(int? id)
         {
             var userId = _userService.GetUserId();
 
-            var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
-            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).ToList();
+            
+            var cartItem = _context.CartItems.Where(s => s.cartItemsId == id).FirstOrDefault();
             if (cartItem != null)
             {
-                var product = cartItem.FirstOrDefault(c => c.TblProductProductId == id &&  c.userId == cart.MemberId);
-                if (product != null)
-                {
-                    _context.CartItems.Remove(product);
-                    _context.SaveChanges();
-                }
+                
+                _context.CartItems.Remove(cartItem);
+                await _context.SaveChangesAsync();
+                
             }
-            return RedirectToAction(nameof(Index));
+            return View();
         }
         public IActionResult Cart()
         {
             var userId = _userService.GetUserId();
-            var cart = _context.TblCart.Where(s => s.MemberId == userId).FirstOrDefault();
-            var cartItem = _context.CartItems.Where(s => s.userId == cart.MemberId).Include(c=>c.TblProduct).Include(c => c.TblProduct.Category).ToList();
+            
+            var cartItem = _context.CartItems.Where(s => s.userId == userId).Include(c=>c.TblProduct).Include(c => c.TblProduct.Category).ToList();
             if (cartItem == null)
             {
                 cartItem = new List<CartItems>();

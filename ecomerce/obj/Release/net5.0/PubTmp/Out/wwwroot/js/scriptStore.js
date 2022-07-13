@@ -21,45 +21,45 @@ logoutBtn.addEventListener("click" , function()
 
 //define product
 
-let productsDom = document.querySelector(".products");
-let cartProductDom =document.querySelector(".carts-products div");
-let cartProductMenu=document.querySelector(".carts-products");
-let bageDom =document.querySelector(".badge");
-let shoppingCartItems=document.querySelector(".shoppingcart");
+//let productsDom = document.querySelector(".products");
+//let cartProductDom =document.querySelector(".carts-products div");
+//let cartProductMenu=document.querySelector(".carts-products");
+//let bageDom =document.querySelector(".badge");
+//let shoppingCartItems=document.querySelector(".shoppingcart");
 
-let products=[
-    {
-    id:1,
-    title:"Tomato Product",
-    quality:"A",
-    imageUrl:"images3/tomato.jpg",
-    price: "20$"
-},
+//let products=[
+//    {
+//    id:1,
+//    title:"Tomato Product",
+//    quality:"A",
+//    imageUrl:"images3/tomato.jpg",
+//    price: "20$"
+//},
 
-{
-    id:2,
-    title:"Banana Product",
-    quality:"C",
-    imageUrl:"images3/bananaaaa.jpg",
-    price:"7$"
-},
+//{
+//    id:2,
+//    title:"Banana Product",
+//    quality:"C",
+//    imageUrl:"images3/bananaaaa.jpg",
+//    price:"7$"
+//},
 
-{
-    id:3,
-    title:"Red Onion Product",
-    quality:"A",
-    imageUrl:"images3/red onion.jpg",
-    price:"15$"
-},
+//{
+//    id:3,
+//    title:"Red Onion Product",
+//    quality:"A",
+//    imageUrl:"images3/red onion.jpg",
+//    price:"15$"
+//},
 
-{
-    id:4,
-    title:"Potato Product",
-    quality:"B",
-    imageUrl:"images3/potato.jpg",
-    price:"11$"
-},
-];
+//{
+//    id:4,
+//    title:"Potato Product",
+//    quality:"B",
+//    imageUrl:"images3/potato.jpg",
+//    price:"11$"
+//},
+//];
 
 shoppingCartItems.addEventListener("click",openCartMenu);
 

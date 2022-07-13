@@ -19,16 +19,19 @@ body {
     margin: 0 auto;
 }
 
-    .dashboard .navigation {
+    .dashboard .main {
+        width: 100%;
+    }
+/*  .dashboard .navigation {
         position: fixed;
         display: flex;
         top: 0px;
         z-index: 1;
         background-color: white;
-        /*left: 0px;*/
+        left: 0px;
         align-items: baseline;
-    }
-        /* .dashboard .navigation {
+    }*/
+/* .dashboard .navigation {
         display: fixed;
         box-shadow: 1px 1px 40px rgba(216, 211, 211, 0.836);
         justify-content: space-between;
@@ -36,8 +39,7 @@ body {
         margin-right: 0px;
         right: 0;
     }*/
-
-        .dashboard .navigation img.user {
+/* .dashboard .navigation img.user {
             width: 50px;
             height: 50px;
             border-radius: 10px;
@@ -71,9 +73,8 @@ body {
     .dashboard .main .search {
         display: flex;
         align-items: baseline;
-    }
-
-        .dashboard .main .search form {
+    }*/
+/*   .dashboard .main .search form {
             margin-top: 50px;
             position: relative;
             margin-left: 10px;
@@ -133,8 +134,7 @@ body {
                 border: none;
                 font-size: 16px;
                 background-color: rgba(0 0 0 / 0);
-            }
-
+            }*/
 meter {
     rotate: 90deg;
     transform: rotate(-90deg);
@@ -258,15 +258,12 @@ meter {
     background-color: rgb(167, 0, 106);
 }*/
 .weather {
-    height: 200px;
+    justify-content: space-around;
     display: flex;
-    /*    background-image: url('https://www.wallpaperuse.com/wallp/25-252084_m.jpg');
-*/ background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
     padding: 20px 20px 20px 60px;
     font-weight: bolder;
     box-shadow: 1px 1px 40px rgba(216, 211, 211, 0.836);
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 15px;
 }
@@ -343,14 +340,14 @@ input:checked + .slider:before {
 .control {
     background-color: #ffffff;
     height: 250px;
-    width: 70%;
-    margin: 20px 20px 20px 60px;
+    width: 100%;
+    /* margin: 20px 20px 20px 60px;*/
     background-color: white;
     box-shadow: 1px 1px 40px rgba(216, 211, 211, 0.836);
     margin-bottom: 20px;
     border-radius: 15px;
-    margin-right: 90%;
-    margin-left: 23%;
+    /* margin-right: 90%;
+    margin-left: 23%;*/
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
@@ -402,11 +399,17 @@ input:checked + .slider:before {
 
     .weather .temp {
         display: block;
+        margin: 1%;
+        justify-content: space-around;
     }
+
+        .weather .temp p {
+            margin: 1%;
+        }
 }
 
 @media only screen and (max-width: 786px) {
-    .dashboard .navigation {
+    /*  .dashboard .navigation {
         position: fixed;
         display: flex;
         top: 0px;
@@ -424,7 +427,7 @@ input:checked + .slider:before {
             width: 30px;
             height: 30px;
             border-radius: 10px;
-        }
+        }*/
 
     .main {
         margin-top: 100px;
@@ -433,8 +436,8 @@ input:checked + .slider:before {
 
     .control {
         width: 99%;
-        margin-left: 1%;
-        margin-right: 25%;
+        /* margin-left: 1%;
+        margin-right: 25%;*/
         padding-top: 5px;
     }
 }
@@ -469,8 +472,8 @@ input:checked + .slider:before {
         right: 0;
     }
 
-    section.main {
-        width: 70%;
+    /* section.main {
+        width: 100%;
         margin-right: 300px;
         margin-left: 300px;
     }
@@ -482,9 +485,9 @@ input:checked + .slider:before {
 
         .dashboard .navigation div .material-icons-outlined {
             margin-top: 3vh;
-        }
+        }*/
 
-    .weather {
+    /* .weather {
         display: block;
         width: 20%;
         padding-top: 0px;
@@ -492,11 +495,11 @@ input:checked + .slider:before {
         top: 20px;
         left: 8px;
         height: 95%;
-    }
+    }*/
 
-        .weather .temp {
-            display: block;
-        }
+    .weather .temp {
+        display: block;
+    }
 
     .dashboard .navigation {
         background-color: white;

@@ -29,7 +29,7 @@ namespace ecomerce.Controllers
             var userId = _userService.GetUserId();
 
             var cart = _context.CartItems.Where(s => s.userId == userId).Include(s => s.TblProduct).ToList();
-
+           
             checkInfoWithCart checkInfoWithCart = new checkInfoWithCart { carts = cart  };
 
             //var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
@@ -45,11 +45,11 @@ namespace ecomerce.Controllers
 
 
             
-            ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item => (item.TblProduct.Price* item.Quantity));
-            ViewBag.total = Math.Round(ViewBag.DollarAmount, 2) * 100;
-            ViewBag.total = Convert.ToInt64(ViewBag.total);
-            long total = ViewBag.total;
-            TotalAmount = total.ToString();
+            //ViewBag.DollarAmount = checkInfoWithCart.carts.Sum(item => (item.TblProduct.Price* item.Quantity));
+            //ViewBag.total = Math.Round(ViewBag.DollarAmount, 2) * 100;
+            //ViewBag.total = Convert.ToInt64(ViewBag.total);
+            //long total = ViewBag.total;
+            //TotalAmount = total.ToString();
 
             return View(checkInfoWithCart);
         }
@@ -111,12 +111,12 @@ namespace ecomerce.Controllers
                 userIformation.propertyNumber = model.checkoutInfo.propertyNumber;
 
                 await _context.SaveChangesAsync();
-
+                var tblCart = await _context.CartItems.Where(s => s.userId == userId).Include(x=>x.TblProduct).ToListAsync();
                 var result = new Order_details
                 {
 
                     checkoutInfoId = userIformation.checkoutInfoId,
-                    //total = model.total,
+                    total =Convert.ToDecimal( tblCart.Sum(item=>item.Quantity*item.TblProduct.Price)),
                     PaymentspaymentDetailsId = 1,
                     ModifiedDate = DateTime.UtcNow,
                     CreatedDate = DateTime.UtcNow
@@ -126,7 +126,7 @@ namespace ecomerce.Controllers
 
 
                 //.Include(s => s.Product)
-                var tblCart = await _context.TblCart.Where(s => s.MemberId == userId).ToListAsync();
+                
                 foreach (var product in tblCart)
                 {
                     var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId );
@@ -149,8 +149,7 @@ namespace ecomerce.Controllers
                         _context.Order_items.Add(orderItems);
                         await _context.SaveChangesAsync();
                     }
-                    _context.TblCart.Remove(product);
-                    await _context.SaveChangesAsync();
+                  
                 }
 
             }
@@ -172,12 +171,12 @@ namespace ecomerce.Controllers
                 };
                 _context.checkoutInfo.Add(resultInfo);
                 await _context.SaveChangesAsync();
-
+                var tblCart = await _context.CartItems.Where(s => s.userId == userId).Include(x => x.TblProduct).ToListAsync();
                 var result = new Order_details
                 {
 
                     checkoutInfoId = resultInfo.checkoutInfoId,
-                    //total = model.total,
+                    total = Convert.ToDecimal(tblCart.Sum(item => item.Quantity * item.TblProduct.Price)),
                     PaymentspaymentDetailsId = 1,
                     ModifiedDate = DateTime.UtcNow,
                     CreatedDate = DateTime.UtcNow
@@ -188,7 +187,7 @@ namespace ecomerce.Controllers
 
 
                 //.Include(s => s.Product)
-                var tblCart = await _context.TblCart.Where(s => s.MemberId == userId).ToListAsync();
+               
                 foreach (var product in tblCart)
                 {
                     var oldOrderItems = await _context.Order_items.SingleOrDefaultAsync(s => s.orderItemsId == result.orderDetailsId );
@@ -212,20 +211,47 @@ namespace ecomerce.Controllers
                         await _context.SaveChangesAsync();
                     }
 
-                    _context.TblCart.Remove(product);
-                    await _context.SaveChangesAsync();
+                    //_context.CartItems.Remove(product);
+                    //await _context.SaveChangesAsync();
                 }
             }
-            
 
 
+
+
+            return RedirectToAction(nameof(Pay));
             
-            //return RedirectToAction(nameof(Index));
-            return Ok();
+            //return Ok();
 
 
 
         }
+
+        public IActionResult Pay()
+        {
+            var userId = _userService.GetUserId();
+            var tblCart = _context.CartItems.Where(s => s.userId == userId).Include(s => s.TblProduct).ToList();
+
+            var Total = new total { Total = tblCart.Sum(s => s.Quantity * s.TblProduct.Price) };
+            ViewBag.DollarAmount = Total.Total;
+            ViewBag.total = Math.Round(ViewBag.DollarAmount, 2) * 100;
+            ViewBag.total = Convert.ToInt64(ViewBag.total);
+            long total = ViewBag.total;
+            TotalAmount = total.ToString();
+
+            foreach (var product in tblCart)
+            {
+               
+              
+
+                _context.CartItems.Remove(product);
+                 _context.SaveChanges();
+            }
+
+            return View();
+            //return RedirectToAction(nameof(Index));
+        }
+
 
     }
 }
